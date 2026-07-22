@@ -1,6 +1,26 @@
 ---
 scope: Show spread, shape, and outliers of values.
 use_when: The story is the distribution itself, not a single summary number.
+aliases:
+  - Distribution charts
+tags:
+  - data-viz
+  - chart-types
+  - histogram
+  - box-plot
+  - violin-plot
+  - beeswarm
+  - ridgeline
+keywords:
+  - histogram
+  - box plot
+  - beeswarm plot
+  - ecdf plot
+  - kde density plot
+  - violin plot
+  - ridgeline plot
+  - butterfly chart
+  - strip plot
 ---
 
 # Distribution charts
@@ -44,4 +64,4 @@ Averages hide structure — reach here whenever spread, shape, or outliers matte
 ## Labeling
 - Label each group with its defining threshold and sample size n.
 
-Related: [patterns/elevation-swaps.md](../patterns/elevation-swaps.md) · [data.md](../data.md) · [so-what.md](../so-what.md)
+Related: [[elevation-swaps]] · [[data]] · [[so-what]]

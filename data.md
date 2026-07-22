@@ -1,6 +1,24 @@
 ---
 scope: What to plot, and how to prepare it — selection, baselines, statistics, normalization, binning, missing data.
 use_when: Deciding which data, slice, window, or baseline to show, or choosing a statistic, denominator, adjustment, binning, or gap handling before plotting.
+aliases:
+  - Data
+tags:
+  - data-viz
+  - data
+  - summary-statistics
+  - normalization
+  - binning
+  - missing-data
+keywords:
+  - summary statistics
+  - mean vs median
+  - normalization
+  - inflation adjustment
+  - histogram bins
+  - missing data handling
+  - baseline period
+  - per-capita normalization
 ---
 
 # Data
@@ -45,4 +63,4 @@ use_when: Deciding which data, slice, window, or baseline to show, or choosing a
 - Label missing-data spans directly on the chart for honesty.
 - Include every relevant row, even ones that contradict your point.
 
-Related: [so-what.md](so-what.md) · [chart-types/distribution.md](chart-types/distribution.md) · [delivery/axes-and-scales.md](delivery/axes-and-scales.md) · [anti-patterns.md](anti-patterns.md)
+Related: [[so-what]] · [[distribution]] · [[axes-and-scales]] · [[anti-patterns]]

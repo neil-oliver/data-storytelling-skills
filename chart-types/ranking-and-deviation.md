@@ -1,6 +1,25 @@
 ---
 scope: Rank items, or show deviation from a reference.
 use_when: The story is order (who leads) or over/under-performance versus a baseline.
+aliases:
+  - Ranking & deviation charts
+tags:
+  - data-viz
+  - chart-types
+  - ranking
+  - deviation
+  - lollipop-chart
+  - likert-scale
+  - diverging-bar
+keywords:
+  - ranking chart
+  - horizontal bar ranking
+  - lollipop chart
+  - dot plot
+  - deviation chart
+  - diverging bars
+  - likert scale
+  - variance from baseline
 ---
 
 # Ranking & deviation charts
@@ -24,7 +43,7 @@ use_when: The story is order (who leads) or over/under-performance versus a base
 - Print percentage values inside the bars; people judge stacked lengths poorly.
 
 ## Related forms
-- For a bridge between two totals, use a waterfall — see [flow-and-process.md](flow-and-process.md).
-- For paired before/after per category, use a dumbbell — see [comparison.md](comparison.md).
+- For a bridge between two totals, use a waterfall — see [[flow-and-process]].
+- For paired before/after per category, use a dumbbell — see [[comparison]].
 
-Related: [comparison.md](comparison.md) · [flow-and-process.md](flow-and-process.md) · [delivery/color-and-emphasis.md](../delivery/color-and-emphasis.md)
+Related: [[comparison]] · [[flow-and-process]] · [[color-and-emphasis]]

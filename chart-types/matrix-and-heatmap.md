@@ -1,6 +1,24 @@
 ---
 scope: Encode values across a two-dimensional matrix as color.
 use_when: The story is a pattern across two categorical axes (e.g. rows × time).
+aliases:
+  - Matrix & heatmap charts
+tags:
+  - data-viz
+  - chart-types
+  - heatmap
+  - matrix
+  - hexbin
+  - density-matrix
+keywords:
+  - heatmap
+  - density matrix
+  - hexbin
+  - sequential color scale
+  - diverging color scale
+  - color-coded matrix
+  - rows and columns
+  - cell shading
 ---
 
 # Matrix & heatmap charts
@@ -16,6 +34,6 @@ use_when: The story is a pattern across two categorical axes (e.g. rows × time)
 - Keep the cell grid quiet; let color carry the signal.
 
 ## Density matrix
-- For thousands of overplotted points, use a hexbin — see [correlation.md](correlation.md).
+- For thousands of overplotted points, use a hexbin — see [[correlation]].
 
-Related: [delivery/color-and-emphasis.md](../delivery/color-and-emphasis.md) · [delivery/formatting-and-ordering.md](../delivery/formatting-and-ordering.md)
+Related: [[color-and-emphasis]] · [[formatting-and-ordering]]

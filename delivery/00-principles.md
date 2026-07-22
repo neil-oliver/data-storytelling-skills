@@ -1,6 +1,24 @@
 ---
 scope: Cross-cutting delivery principles that apply to every chart before it ships.
 use_when: Polishing any chart for an audience — the general rules beneath the specific delivery topics.
+aliases:
+  - Delivery principles
+tags:
+  - data-viz
+  - delivery
+  - visual-hierarchy
+  - storytelling
+  - whitespace
+  - data-source
+keywords:
+  - visual hierarchy
+  - story zone
+  - data source
+  - whitespace
+  - framing choices
+  - context before reacting
+  - actionable numbers
+  - non-technical audience
 ---
 
 # Delivery principles
@@ -15,4 +33,4 @@ use_when: Polishing any chart for an audience — the general rules beneath the 
 - Preserve whitespace; don't fill every region.
 - Ask what's missing from the visual story before publishing.
 
-Related: [decluttering.md](decluttering.md) · [color-and-emphasis.md](color-and-emphasis.md) · [../so-what.md](../so-what.md)
+Related: [[decluttering]] · [[color-and-emphasis]] · [[so-what]]

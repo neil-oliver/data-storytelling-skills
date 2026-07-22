@@ -1,6 +1,24 @@
 ---
 scope: Present exact values for lookup, citation, or precise comparison.
 use_when: Readers need the numbers, not a shape.
+aliases:
+  - Tables
+tags:
+  - data-viz
+  - chart-types
+  - tables
+  - sparklines
+  - zebra-shading
+  - tabular-figures
+keywords:
+  - data table
+  - sparklines
+  - zebra shading
+  - heatmap cells
+  - tabular figures
+  - sortable columns
+  - row highlighting
+  - column alignment
 ---
 
 # Tables
@@ -33,4 +51,4 @@ use_when: Readers need the numbers, not a shape.
 - Add search, sortable columns, and pagination for long tables.
 - Highlight the row of interest.
 
-Related: [change-over-time.md](change-over-time.md) · [../delivery/formatting-and-ordering.md](../delivery/formatting-and-ordering.md) · [../delivery/typography.md](../delivery/typography.md)
+Related: [[change-over-time]] · [[formatting-and-ordering]] · [[typography]]

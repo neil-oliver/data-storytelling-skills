@@ -1,6 +1,25 @@
 ---
 scope: Design axes, baselines, and scales.
 use_when: Setting axis ranges, gridlines, ticks, or choosing a scale.
+aliases:
+  - Axes & scales
+tags:
+  - data-viz
+  - delivery
+  - axes
+  - scales
+  - baselines
+  - gridlines
+keywords:
+  - zero baseline
+  - axis truncation
+  - log scale
+  - dual y-axes
+  - gridlines
+  - index scale
+  - rotated axis labels
+  - split axis
+  - ternary axes
 ---
 
 # Axes & scales
@@ -29,4 +48,4 @@ use_when: Setting axis ranges, gridlines, ticks, or choosing a scale.
 - Share one axis and scale across compared panels.
 - Extend the time window far enough to expose the seasonal pattern.
 
-Related: [data.md](../data.md) · [../anti-patterns.md](../anti-patterns.md)
+Related: [[data]] · [[anti-patterns]]

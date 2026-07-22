@@ -1,6 +1,24 @@
 ---
 scope: Build categorical, sequential, and diverging color palettes that look good.
 use_when: Constructing or picking the color palette for a chart or map.
+aliases:
+  - Color palettes
+tags:
+  - data-viz
+  - delivery
+  - categorical-palette
+  - sequential-palette
+  - diverging-palette
+  - colorblind-safe
+keywords:
+  - categorical palette
+  - sequential palette
+  - diverging palette
+  - colorblind simulation
+  - grayscale test
+  - hue selection
+  - saturation and lightness
+  - neutral midpoint
 ---
 
 # Color palettes
@@ -34,4 +52,4 @@ use_when: Constructing or picking the color palette for a chart or map.
 - Test every palette in grayscale and colorblind simulation before committing.
 - Ensure every color clears contrast against the background; pastels fail on white.
 
-Related: [color-and-emphasis.md](color-and-emphasis.md) · [typography.md](typography.md) · [../chart-types/matrix-and-heatmap.md](../chart-types/matrix-and-heatmap.md)
+Related: [[color-and-emphasis]] · [[typography]] · [[matrix-and-heatmap]]

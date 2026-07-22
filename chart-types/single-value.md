@@ -1,6 +1,24 @@
 ---
 scope: Present a single headline number against context or a target.
 use_when: One metric is the whole story (KPI tiles, scorecards).
+aliases:
+  - Single-value charts
+tags:
+  - data-viz
+  - chart-types
+  - kpi
+  - bullet-chart
+  - gauge
+  - progress-bar
+keywords:
+  - big number
+  - kpi tile
+  - bullet chart
+  - gauge chart
+  - progress bar
+  - range bar
+  - scorecard
+  - target line
 ---
 
 # Single-value charts
@@ -27,4 +45,4 @@ use_when: One metric is the whole story (KPI tiles, scorecards).
 - Prefer a bullet or big number over a gauge; gauges waste space.
 - Use a progress bar for completion toward a fixed, meaningful goal.
 
-Related: [../delivery/dashboards.md](../delivery/dashboards.md) · [../delivery/formatting-and-ordering.md](../delivery/formatting-and-ordering.md) · [../so-what.md](../so-what.md)
+Related: [[dashboards]] · [[formatting-and-ordering]] · [[so-what]]

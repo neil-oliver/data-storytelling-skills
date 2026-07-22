@@ -1,6 +1,24 @@
 ---
 scope: Force the insight — the "so what" filter that decides whether a chart has a point.
 use_when: Deciding whether a chart has a point worth showing, and how to state it.
+aliases:
+  - So what
+tags:
+  - data-viz
+  - so-what
+  - insight-statement
+  - benchmarking
+  - signal-vs-noise
+  - trend-validation
+keywords:
+  - so what statement
+  - benchmark anchoring
+  - signal vs noise
+  - confidence intervals
+  - trend validation
+  - baseline volatility
+  - kpi context
+  - target progress
 ---
 
 # So what
@@ -31,4 +49,4 @@ use_when: Deciding whether a chart has a point worth showing, and how to state i
 - Treat identical numbers as supporting several valid stories; choose one and defend it.
 - Present apples-to-apples comparisons; equal-looking visuals must mean equal measures.
 
-Related: [data.md](data.md) · [delivery/00-principles.md](delivery/00-principles.md) · [anti-patterns.md](anti-patterns.md)
+Related: [[data]] · [[00-principles]] · [[anti-patterns]]

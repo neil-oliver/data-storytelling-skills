@@ -1,6 +1,24 @@
 ---
 scope: Add interaction to a chart without adding clutter.
 use_when: The chart is interactive (hover, drill, filter, animate).
+aliases:
+  - Interaction
+tags:
+  - data-viz
+  - delivery
+  - interaction
+  - hover-tooltips
+  - drill-down
+  - filtering
+keywords:
+  - hover to reveal values
+  - drill from summary to detail
+  - toggle series visibility
+  - filter by segment or region
+  - animation pause and scrubbing
+  - interactive controls on mobile
+  - decluttered interaction
+  - addressing the reader directly
 ---
 
 # Interaction
@@ -14,4 +32,4 @@ use_when: The chart is interactive (hover, drill, filter, animate).
 - Pair animation with pause and scrubbing controls so viewers can inspect key moments.
 - For interactive charts, address the reader directly to prompt exploration.
 
-Related: [decluttering.md](decluttering.md) · [audience-and-presentation.md](../audience-and-presentation.md)
+Related: [[decluttering]] · [[audience-and-presentation]]

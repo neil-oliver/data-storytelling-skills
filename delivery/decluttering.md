@@ -1,6 +1,25 @@
 ---
 scope: Remove everything that doesn't carry the message.
 use_when: Reducing visual noise before shipping a chart.
+aliases:
+  - Decluttering
+tags:
+  - data-viz
+  - delivery
+  - decluttering
+  - data-ink
+  - chart-junk
+  - minimalism
+keywords:
+  - data-ink ratio
+  - chart junk
+  - declutter
+  - 3d effects
+  - fade raw data
+  - consolidate categories
+  - decorative icons
+  - minimal default view
+  - reveal on demand
 ---
 
 # Decluttering
@@ -15,4 +34,4 @@ use_when: Reducing visual noise before shipping a chart.
 - Remove decorative icons and imagery that encode nothing.
 - Keep the default view minimal; reveal detail on demand via interaction.
 
-Related: [color-and-emphasis.md](color-and-emphasis.md) · [interaction.md](interaction.md)
+Related: [[color-and-emphasis]] · [[interaction]]
