@@ -1,6 +1,21 @@
 ---
 scope: Repeat one small chart across many categories or cohorts.
 use_when: Too many series overlap, or each series deserves its own panel.
+aliases:
+  - Small multiples
+tags:
+  - data-viz
+  - chart-types
+  - small-multiples
+  - faceting
+  - trellis-chart
+keywords:
+  - small multiples
+  - trellis chart
+  - panel charts
+  - faceted charts
+  - shared axes
+  - side-by-side comparison
 ---
 
 # Small multiples
@@ -12,4 +27,4 @@ use_when: Too many series overlap, or each series deserves its own panel.
 - Keep color associations consistent across panels.
 - Prefer small multiples over animation for side-by-side before/after comparison.
 
-Related: [patterns/elevation-swaps.md](../patterns/elevation-swaps.md) · [delivery/subtitles.md](../delivery/subtitles.md)
+Related: [[elevation-swaps]] · [[subtitles]]

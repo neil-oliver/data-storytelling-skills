@@ -1,6 +1,26 @@
 ---
 scope: Label marks and series; minimize legend lookups.
 use_when: Deciding how to name series, points, and values on the chart.
+aliases:
+  - Labels & legends
+tags:
+  - data-viz
+  - delivery
+  - direct-labeling
+  - legend-design
+  - legend-placement
+  - data-labels
+keywords:
+  - direct labeling
+  - legend placement
+  - label lines at their ends
+  - percentage labels in stacked bars
+  - heatmap cell values
+  - label peak and trough
+  - legend swatch matching
+  - abbreviations in subtitle
+  - quadrant naming
+  - sticky legend
 ---
 
 # Labels & legends
@@ -29,4 +49,4 @@ use_when: Deciding how to name series, points, and values on the chart.
 - Mirror the chart's strokes, outlines, and patterns exactly in legend swatches.
 - Keep the color key on-screen — sticky or repeated — so readers never scroll to find it.
 
-Related: [annotations.md](annotations.md) · [formatting-and-ordering.md](formatting-and-ordering.md) · [color-and-emphasis.md](color-and-emphasis.md)
+Related: [[annotations]] · [[formatting-and-ordering]] · [[color-and-emphasis]]

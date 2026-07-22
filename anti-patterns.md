@@ -1,6 +1,26 @@
 ---
 scope: Honesty and clarity failures to avoid.
 use_when: Reviewing a chart before shipping; catching distortion, clutter, and bias.
+aliases:
+  - Anti-patterns
+tags:
+  - data-viz
+  - anti-patterns
+  - axis-truncation
+  - cognitive-bias
+  - misleading-charts
+  - chart-honesty
+keywords:
+  - axis truncation
+  - dual y-axes
+  - mean vs median
+  - cherry-picking data
+  - confirmation bias
+  - survivorship bias
+  - pie charts
+  - radar charts
+  - word clouds
+  - loess overfitting
 ---
 
 # Anti-patterns
@@ -54,4 +74,4 @@ use_when: Reviewing a chart before shipping; catching distortion, clutter, and b
 - Don't annotate a movement smaller than the metric's typical wobble.
 - Don't split your argument into prose; embed it in the chart.
 
-Related: [so-what.md](so-what.md) · [delivery/axes-and-scales.md](delivery/axes-and-scales.md) · [data.md](data.md)
+Related: [[so-what]] · [[axes-and-scales]] · [[data]]

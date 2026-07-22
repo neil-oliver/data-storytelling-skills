@@ -1,6 +1,24 @@
 ---
 scope: Show the relationship between two or more numeric variables.
 use_when: The story is whether variables move together, and where the outliers are.
+aliases:
+  - Correlation charts
+tags:
+  - data-viz
+  - chart-types
+  - scatter-plot
+  - bubble-chart
+  - hexbin
+  - quadrant-chart
+keywords:
+  - scatter plot
+  - bubble chart
+  - hexbin
+  - density plot
+  - quadrant chart
+  - trend line
+  - outliers
+  - overplotting
 ---
 
 # Correlation charts
@@ -23,4 +41,4 @@ use_when: The story is whether variables move together, and where the outliers a
 - Partition a scatter into labeled quadrants to turn positions into named categories.
 - Split the two metrics at meaningful thresholds; name quadrants (e.g. winners, laggards).
 
-Related: [so-what.md](../so-what.md) · [delivery/annotations.md](../delivery/annotations.md)
+Related: [[so-what]] · [[annotations]]

@@ -1,6 +1,24 @@
 ---
 scope: Write the chart subtitle / deck line.
 use_when: Adding the supporting line beneath the title.
+aliases:
+  - Subtitles
+tags:
+  - data-viz
+  - delivery
+  - subtitle-writing
+  - framing
+  - small-multiples
+  - data-notes
+keywords:
+  - subtitle content
+  - units timeframe geography source
+  - deck line
+  - framing effect with bold headline
+  - naming the cause of a pattern
+  - misleading metric disclosure
+  - small multiples subtitles
+  - color category names in intro text
 ---
 
 # Subtitles
@@ -14,4 +32,4 @@ use_when: Adding the supporting line beneath the title.
 
 - Color category names in the intro text to prime readers before the chart.
 
-Related: [titles.md](titles.md) · [chart-types/small-multiples.md](../chart-types/small-multiples.md)
+Related: [[titles]] · [[small-multiples]]

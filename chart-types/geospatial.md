@@ -1,6 +1,22 @@
 ---
 scope: Show a pattern across geography.
 use_when: Location is the actual question, not just an available attribute.
+aliases:
+  - Geospatial charts
+tags:
+  - data-viz
+  - chart-types
+  - choropleth-map
+  - flow-map
+  - isochrone-map
+keywords:
+  - choropleth map
+  - flow map
+  - isochrone map
+  - travel-time map
+  - origin-destination flow
+  - spatial density surface
+  - rate normalization
 ---
 
 # Geospatial charts
@@ -21,4 +37,4 @@ use_when: Location is the actual question, not just an available attribute.
 ## When to map
 - Choose a map only when geographic pattern is the actual question; otherwise a bar or table is clearer.
 
-Related: [chart-types/00-selection.md](00-selection.md) · [delivery/decluttering.md](../delivery/decluttering.md)
+Related: [[00-selection]] · [[decluttering]]

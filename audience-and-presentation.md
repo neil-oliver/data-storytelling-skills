@@ -1,6 +1,25 @@
 ---
 scope: Tailor the chart to the reader, deliver it well, and read charts critically.
 use_when: Choosing depth, framing, and sequencing for a specific audience or room.
+aliases:
+  - Audience & presentation
+tags:
+  - data-viz
+  - audience
+  - audience-tailoring
+  - presentation-delivery
+  - critical-reading
+  - storyboarding
+keywords:
+  - box plots
+  - kde and violin plots
+  - storyboarding
+  - reading charts critically
+  - interactive slider
+  - log toggle
+  - audience tailoring
+  - leadership dashboards
+  - number precision
 ---
 
 # Audience & presentation
@@ -44,4 +63,4 @@ use_when: Choosing depth, framing, and sequencing for a specific audience or roo
 - Expose an arbitrary cutoff as an interactive slider rather than hard-coding one split.
 - Offer an un-log toggle so viewers can inspect raw magnitudes behind a log view.
 
-Related: [so-what.md](so-what.md) · [delivery/dashboards.md](delivery/dashboards.md) · [delivery/interaction.md](delivery/interaction.md)
+Related: [[so-what]] · [[dashboards]] · [[interaction]]

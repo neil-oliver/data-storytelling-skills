@@ -7,6 +7,24 @@ description: >-
   a chart's point land — in any medium (plotting code, inline SVG, a dashboard, a notebook,
   an exported image). Each phase loads only its slice of the corpus, so one agent, or a chain
   of phase-specialized agents, can use it without loading the whole library.
+aliases:
+  - Data Visualization Playbook
+tags:
+  - data-viz
+  - method
+  - four-layer-method
+  - workflow
+  - chart-selection
+  - so-what-gate
+keywords:
+  - data visualization method
+  - four-layer design process
+  - chart type selection
+  - so what gate
+  - delivery principles
+  - phase-specialized agents
+  - process guardrails
+  - rule corpus
 ---
 
 # Data Visualization Playbook
@@ -24,7 +42,7 @@ with its own slice of the corpus. One agent can run all four in sequence, or a s
 can own each — receiving the previous layer's **output** and passing its own forward.
 
 ### Layer 1 — Data · *what to plot, cleaned and shaped*
-- **Load:** [data.md](data.md)
+- **Load:** [[data]]
 - **Do:** choose the variables, slice, time window, and baseline; pick summary statistics;
   normalize, bin, and handle missing data.
 - **Output:** a clean, shaped dataset **+ a one-line statement of the analytical task**
@@ -32,19 +50,19 @@ can own each — receiving the previous layer's **output** and passing its own f
   single value, geographic, matrix…).
 
 ### Layer 2 — Chart type · *the form that makes the message unmissable*
-- **Load:** [chart-types/00-selection.md](chart-types/00-selection.md) (the task → form lookup),
+- **Load:** [[00-selection]] (the task → form lookup),
   then the **one** category file it routes you to.
 - **Do:** map the analytical task to a form; prefer the simplest honest form that fits.
 - **Output:** the chosen chart form **+ any form-specific construction notes** from that file.
 
 ### Layer 3 — So what · *the gate: no point, no chart*
-- **Load:** [so-what.md](so-what.md)
+- **Load:** [[so-what]]
 - **Do:** state metric, cause, impact, and next action in one sentence. If you can't, **stop** —
   return to Layer 1 to fix the data or the framing, or don't ship the chart.
 - **Output:** the one-sentence takeaway the chart must deliver.
 
 ### Layer 4 — Delivery · *make the message land*
-- **Load:** [delivery/00-principles.md](delivery/00-principles.md), then only the delivery topics
+- **Load:** [[00-principles]], then only the delivery topics
   this chart needs (see selection below).
 - **Do:** title, axes, color, labels, annotation, decluttering, and polish — all around the takeaway.
 - **Output:** the finished chart.
@@ -53,22 +71,22 @@ can own each — receiving the previous layer's **output** and passing its own f
 
 Don't load all of `delivery/`. Apply the always-on set; add the rest by context.
 
-**Always:** [00-principles](delivery/00-principles.md) · [titles](delivery/titles.md) ·
-[subtitles](delivery/subtitles.md) · [axes-and-scales](delivery/axes-and-scales.md) ·
-[color-and-emphasis](delivery/color-and-emphasis.md) · [labels-and-legends](delivery/labels-and-legends.md) ·
-[annotations](delivery/annotations.md) · [decluttering](delivery/decluttering.md) ·
-[formatting-and-ordering](delivery/formatting-and-ordering.md) · [polish](delivery/polish.md)
+**Always:** [[00-principles]] · [[titles]] ·
+[[subtitles]] · [[axes-and-scales]] ·
+[[color-and-emphasis]] · [[labels-and-legends]] ·
+[[annotations]] · [[decluttering]] ·
+[[formatting-and-ordering]] · [[polish]]
 
 **By context — load only if it applies:**
-- Building a color scale (sequential / diverging / categorical) → [color-palettes](delivery/color-palettes.md)
-- More than one chart, or KPI tiles, in one view → [dashboards](delivery/dashboards.md)
-- The chart is interactive (hover, filter, drill, animate) → [interaction](delivery/interaction.md)
-- Choosing typefaces, sizes, or weights → [typography](delivery/typography.md)
+- Building a color scale (sequential / diverging / categorical) → [[color-palettes]]
+- More than one chart, or KPI tiles, in one view → [[dashboards]]
+- The chart is interactive (hover, filter, drill, animate) → [[interaction]]
+- Choosing typefaces, sizes, or weights → [[typography]]
 
 ## Cross-cutting references (pull from any layer when the decision calls for it)
-- [anti-patterns.md](anti-patterns.md) — what never to do; honesty and cognitive-bias guards. Consult before shipping.
-- [patterns/elevation-swaps.md](patterns/elevation-swaps.md) — when the default form is cluttered or off-message, the sharper reframe.
-- [audience-and-presentation.md](audience-and-presentation.md) — tailoring depth, framing, and sequencing to a specific reader or room.
+- [[anti-patterns]] — what never to do; honesty and cognitive-bias guards. Consult before shipping.
+- [[elevation-swaps]] — when the default form is cluttered or off-message, the sharper reframe.
+- [[audience-and-presentation]] — tailoring depth, framing, and sequencing to a specific reader or room.
 
 ## Process guardrails
 - Define narrative intent — explore or assert — before designing.
@@ -81,4 +99,4 @@ Don't load all of `delivery/`. Apply the always-on set; add the rest by context.
 - Give each phase agent **only its layer's `Load` set** — not the whole corpus. That isolation is the point of the split.
 - Pass the `Output` of each layer as the input to the next; don't forward the raw files you read.
 - The Layer 3 gate is a hard stop: an agent that can't state the so-what returns to Layer 1, it does not proceed to Delivery.
-- [README.md](README.md) is the map of where every rule lives, if an agent needs to locate one outside its layer.
+- [[README]] is the map of where every rule lives, if an agent needs to locate one outside its layer.

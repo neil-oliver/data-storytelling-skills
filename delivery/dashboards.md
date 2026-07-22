@@ -1,6 +1,24 @@
 ---
 scope: Lay out multi-chart dashboards and KPI tiles.
 use_when: Composing more than one chart or metric into a single view.
+aliases:
+  - Dashboards
+tags:
+  - data-viz
+  - delivery
+  - dashboards
+  - kpi-tiles
+  - layout
+  - drill-down
+keywords:
+  - kpi tiles
+  - z-pattern layout
+  - drill-down detail
+  - labeled sections
+  - delta labeling
+  - tile hierarchy
+  - live source data
+  - vs-prior context
 ---
 
 # Dashboards
@@ -17,4 +35,4 @@ use_when: Composing more than one chart or metric into a single view.
 - Avoid uniform-size tile grids that make everything feel equally important.
 - Connect tiles to live source data so they refresh instead of going stale.
 
-Related: [chart-types/single-value.md](../chart-types/single-value.md) · [decluttering.md](decluttering.md) · [audience-and-presentation.md](../audience-and-presentation.md)
+Related: [[single-value]] · [[decluttering]] · [[audience-and-presentation]]

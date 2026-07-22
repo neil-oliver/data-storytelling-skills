@@ -1,6 +1,25 @@
 ---
 scope: Write the chart title.
 use_when: Setting the headline of any chart.
+aliases:
+  - Titles
+tags:
+  - data-viz
+  - delivery
+  - chart-titles
+  - takeaway-headline
+  - call-to-action
+  - headline-writing
+keywords:
+  - takeaway title
+  - lead with the conclusion
+  - title length six to twelve words
+  - title placement top-left
+  - neutral descriptive titles
+  - interpretive headlines
+  - question titles
+  - call to action title
+  - highlight colors in title
 ---
 
 # Titles
@@ -19,4 +38,4 @@ use_when: Setting the headline of any chart.
 - Name the highlight colors inside the title to replace a separate key.
 - Avoid generic data-only titles that omit your analytical point.
 
-Related: [subtitles.md](subtitles.md) · [../so-what.md](../so-what.md)
+Related: [[subtitles]] · [[so-what]]

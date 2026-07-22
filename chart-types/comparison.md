@@ -1,6 +1,23 @@
 ---
 scope: Compare values across categories or groups.
 use_when: The question is "which is bigger / smaller / different" across items.
+aliases:
+  - Comparison charts
+tags:
+  - data-viz
+  - chart-types
+  - comparison
+  - bar-chart
+  - lollipop
+keywords:
+  - bar chart
+  - column chart
+  - horizontal bar
+  - lollipop chart
+  - dot plot
+  - dumbbell chart
+  - clustered bars
+  - category comparison
 ---
 
 # Comparison charts
@@ -37,6 +54,6 @@ Use when: showing before/after for each category.
 - Sort dumbbell rows by current value when readers look up individual items.
 
 ## Beyond bars
-- For multivariate or cyclical comparison, see [specialized.md](specialized.md) — use sparingly.
+- For multivariate or cyclical comparison, see [[specialized]] — use sparingly.
 
-Related: [ranking-and-deviation.md](ranking-and-deviation.md) · [specialized.md](specialized.md) · [delivery/formatting-and-ordering.md](../delivery/formatting-and-ordering.md)
+Related: [[ranking-and-deviation]] · [[specialized]] · [[formatting-and-ordering]]
