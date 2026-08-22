@@ -115,14 +115,19 @@ parallel (see [Parallel work](#parallel-work)):
   underlying data or queries are visible: axes, truncation, cherry-picking, misleading
   statistics, bias.
 - **Form** — [chart-types/00-selection.md](chart-types/00-selection.md), the category
-  file for the current form, and [elevation-swaps.md](elevation-swaps.md): is this the
-  right chart at all, and is there a sharper reframe?
-- **Delivery** — [delivery/00-principles.md](delivery/00-principles.md) plus the topics
-  the chart uses: title, axis labels, color, annotation, clutter, ordering.
+  file for the form on screen (judge the form it *should* be with 00-selection.md, not by
+  loading extra category files), and [elevation-swaps.md](elevation-swaps.md): is this
+  the right chart at all, and is there a sharper reframe?
+- **Delivery** — [delivery/00-principles.md](delivery/00-principles.md) plus delivery
+  topics, judging what the chart is missing as much as what it has: the create loop's
+  step-6 lists are the file checklist (always-on topics, plus the by-context ones that
+  apply). When a specific audience, reader, or venue is named, add
+  [audience-and-presentation.md](audience-and-presentation.md).
 
-**3. Report — then fix, if asked.** Deliver a one-line verdict, the single
-highest-leverage change first, then prioritized findings, each naming the violated rule
-and the concrete fix. Integrity findings outrank form; form outranks polish. To apply the
+**3. Report — then fix, if asked.** Deliver a one-line verdict; then the single
+highest-leverage change — the fix that unblocks or rewrites the most other findings,
+often but not always the missing takeaway from step 1; then prioritized findings, each
+naming the violated rule and the concrete fix. Integrity findings outrank form; form outranks polish. To apply the
 fixes yourself, enter the create loop at step 3 or 4 with the reconstructed intent as the
 target.
 
