@@ -16,7 +16,7 @@ use_when: Setting the headline of any chart.
 - For media or engagement, a question or bold hook headline can pull readers in.
 - Avoid question titles on analytical charts; they make readers hunt for the answer.
 - Use a call-to-action title stating the recommended next step, when you want action.
-- Name the highlight colors inside the title to replace a separate key.
+- Name the highlight colors inside the title to replace a separate key; when an accent is blue, bold the name instead of coloring it (blue text reads as a link).
 - Avoid generic data-only titles that omit your analytical point.
 
 Related: [subtitles](subtitles.md) · [so-what](../so-what.md)

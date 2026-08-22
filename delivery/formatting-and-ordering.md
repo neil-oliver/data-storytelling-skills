@@ -10,7 +10,7 @@ use_when: Setting number precision, units, styling, or sort order.
 - Trim decimals and abbreviate large numbers (K, M) to declutter dashboards.
 - Keep precise decimals for scientific, financial, or engineering data where rounding erodes credibility.
 - Use thousands separators and consistent units.
-- Fold units into tick labels (e.g. $50) when it aids clarity.
+- Fold units into tick labels (e.g. $50), on the top tick only — see [axes-and-scales](axes-and-scales.md).
 - Signal direction with an up or down arrow and percent, not just the value.
 - Format dates and axis ticks consistently; avoid ambiguous formats.
 

@@ -39,7 +39,9 @@ that is the method working, not failing. The two failure modes it exists to prev
 designing the whole chart on paper before touching the data, and polishing a chart whose
 takeaway never survived contact with the real numbers.
 
-**1. Frame it.** Pin down the question, who is asking, and the decision the answer feeds.
+**1. Frame it.** Pin down the question, who is asking, the decision the answer feeds,
+and the output medium (slide, doc, dashboard, notebook, social) — the medium sets the
+aspect ratio, size, and interactivity budget everything downstream must fit.
 Name your intent — exploring for patterns or asserting a known point — and your starting
 assumption, out loud: bias enters here, not at the color picker. If several questions hide
 inside the request, split them; one chart does one job. When a specific audience, reader,
@@ -50,8 +52,9 @@ hypothesis: the analytical task (comparison, change over time, part-to-whole,
 distribution, correlation, ranking, flow, single value, geographic, matrix), the form
 that would make the answer unmissable, and the takeaway you expect to write. Load
 [chart-types/00-selection.md](chart-types/00-selection.md) to map task → form, then the
-one category file it routes you to. If two or three forms are genuinely plausible, carry
-them all forward and let the real data decide (see [Parallel work](#parallel-work)).
+category file for each form still in play — usually one. If two or three forms are
+genuinely plausible, carry them all forward and let the real data decide (see
+[Parallel work](#parallel-work)).
 
 **3. Interrogate the data.** Load [data.md](data.md). Test the hypothesis against
 reality: run the actual queries, pulls, and transforms, and check whether the data can
@@ -85,7 +88,8 @@ interpretation, not the most persuasive one.
 [labels-and-legends](delivery/labels-and-legends.md) ·
 [annotations](delivery/annotations.md) · [decluttering](delivery/decluttering.md) ·
 [formatting-and-ordering](delivery/formatting-and-ordering.md) ·
-[polish](delivery/polish.md). Add by context only if it applies:
+[polish](delivery/polish.md). They are short — read the set in one batch rather than
+nine sequential opens. Add by context only if it applies:
 - Building a color scale (sequential / diverging / categorical) → [delivery/color-palettes.md](delivery/color-palettes.md)
 - More than one chart, or KPI tiles, in one view → [delivery/dashboards.md](delivery/dashboards.md)
 - The chart is interactive (hover, filter, drill, animate) → [delivery/interaction.md](delivery/interaction.md)
