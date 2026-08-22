@@ -1,24 +1,6 @@
 ---
 scope: Write the chart subtitle / deck line.
 use_when: Adding the supporting line beneath the title.
-aliases:
-  - Subtitles
-tags:
-  - data-viz
-  - delivery
-  - subtitle-writing
-  - framing
-  - small-multiples
-  - data-notes
-keywords:
-  - subtitle content
-  - units timeframe geography source
-  - deck line
-  - framing effect with bold headline
-  - naming the cause of a pattern
-  - misleading metric disclosure
-  - small multiples subtitles
-  - color category names in intro text
 ---
 
 # Subtitles
@@ -29,7 +11,6 @@ keywords:
 - Add a subtitle naming the cause behind the pattern on direction charts.
 - Add a subtitle stating why the metric misleads when it can.
 - In small multiples, state per-panel what each measures in its subtitle.
-
 - Color category names in the intro text to prime readers before the chart.
 
-Related: [[titles]] · [[small-multiples]]
+Related: [titles](titles.md) · [small-multiples](../chart-types/small-multiples.md)

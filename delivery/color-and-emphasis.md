@@ -1,24 +1,6 @@
 ---
 scope: Use color to guide attention and encode meaning.
 use_when: Choosing a palette, highlighting a series, or encoding direction.
-aliases:
-  - Color & emphasis
-tags:
-  - data-viz
-  - delivery
-  - color-theory
-  - saturation
-  - highlighting
-  - colorblind-safe
-keywords:
-  - saturated accent color
-  - desaturate to gray
-  - colorblind-safe hues
-  - diverging color scale
-  - direction of change
-  - marker shape and color
-  - loaded color
-  - saturation hierarchy
 ---
 
 # Color & emphasis
@@ -27,7 +9,7 @@ keywords:
 - Highlight the priority data in one saturated accent; desaturate everything else to gray.
 - Color only the categories that matter; mute the rest to gray.
 - Keep context data visible but recessive so the point still has comparison.
-- Limit a focused, story-driven chart to two or three hues; categorical palettes may need more (see [[color-palettes]]).
+- Limit a focused, story-driven chart to two or three hues; categorical palettes may need more (see [color-palettes](color-palettes.md)).
 - Avoid rainbow-coloring categories with no meaning; color must encode something.
 - Color bars by whether they meet the target, not by category identity.
 - Split marks by color at a reference line: above one color, below another.
@@ -52,4 +34,4 @@ keywords:
 - Avoid blue for colored text; readers mistake it for a link.
 - Cap the visual hierarchy at three or four priority levels.
 
-Related: [[color-palettes]] · [[labels-and-legends]] · [[decluttering]] · [[polish]] · [[typography]]
+Related: [color-palettes](color-palettes.md) · [labels-and-legends](labels-and-legends.md) · [decluttering](decluttering.md) · [polish](polish.md) · [typography](typography.md)

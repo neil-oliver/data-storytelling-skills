@@ -1,26 +1,6 @@
 ---
 scope: Show how values move over time.
 use_when: The x-axis is time, or the story is a trend, turning point, rank shift, or forecast.
-aliases:
-  - Change-over-time charts
-tags:
-  - data-viz
-  - chart-types
-  - line-chart
-  - area-chart
-  - slope-chart
-  - bump-chart
-keywords:
-  - line chart
-  - area chart
-  - slope chart
-  - bump chart
-  - moving average
-  - confidence band
-  - fan chart
-  - step chart
-  - sparkline
-  - dual-axis chart
 ---
 
 # Change-over-time charts
@@ -81,4 +61,4 @@ keywords:
 - Use a line-and-bar combo for two measures on dual axes.
 - Avoid dual y-axes when both series share the same unit — the relationship becomes a scale artifact.
 
-Related: [[small-multiples]] · [[annotations]] · [[axes-and-scales]]
+Related: [small-multiples](small-multiples.md) · [annotations](../delivery/annotations.md) · [axes-and-scales](../delivery/axes-and-scales.md)

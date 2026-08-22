@@ -1,25 +1,6 @@
 ---
 scope: Show parts as shares of a whole.
 use_when: The story is composition — how a total breaks down.
-aliases:
-  - Part-to-whole charts
-tags:
-  - data-viz
-  - chart-types
-  - pie-chart
-  - doughnut-chart
-  - stacked-bar
-  - treemap
-  - waffle-chart
-keywords:
-  - pie chart
-  - doughnut chart
-  - waffle chart
-  - stacked bar
-  - 100% stacked bar
-  - treemap
-  - ternary chart
-  - normalized stacked area
 ---
 
 # Part-to-whole charts
@@ -62,6 +43,6 @@ keywords:
 - Map each part to one vertex; read a value along the gridline parallel to the opposite side.
 
 ## Over time
-- For composition over time, use a normalized stacked area — see [[change-over-time]].
+- For composition over time, use a normalized stacked area — see [change-over-time](change-over-time.md).
 
-Related: [[ranking-and-deviation]] · [[color-and-emphasis]] · [[formatting-and-ordering]]
+Related: [ranking-and-deviation](ranking-and-deviation.md) · [color-and-emphasis](../delivery/color-and-emphasis.md) · [formatting-and-ordering](../delivery/formatting-and-ordering.md)

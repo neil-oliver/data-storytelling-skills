@@ -1,25 +1,6 @@
 ---
 scope: Fonts, weight, size, and text hierarchy for charts and tables.
 use_when: Choosing typefaces, sizes, weights, and alignment for chart text.
-aliases:
-  - Typography
-tags:
-  - data-viz
-  - delivery
-  - font-choice
-  - text-hierarchy
-  - tabular-figures
-  - contrast
-keywords:
-  - sans-serif fonts
-  - font weight hierarchy
-  - minimum text size 12px
-  - near-black text color
-  - bold for emphasis
-  - all-caps letter-spacing
-  - left align text
-  - tabular figures
-  - accessibility contrast ratio
 ---
 
 # Typography
@@ -39,4 +20,4 @@ keywords:
 - Choose fonts with lining, tabular figures so numerals share height and width and align.
 - Verify text meets accessibility contrast ratios against its background.
 
-Related: [[polish]] · [[color-and-emphasis]] · [[titles]]
+Related: [polish](polish.md) · [color-and-emphasis](color-and-emphasis.md) · [titles](titles.md)

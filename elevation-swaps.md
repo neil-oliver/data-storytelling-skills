@@ -1,27 +1,6 @@
 ---
 scope: Reframe a default chart into a sharper one.
 use_when: The obvious chart is cluttered, off-message, or hides the point.
-aliases:
-  - Elevation swaps
-tags:
-  - data-viz
-  - patterns
-  - slope-chart
-  - dumbbell-chart
-  - sankey-diagram
-  - waterfall-chart
-  - small-multiples
-keywords:
-  - slope chart
-  - dumbbell chart
-  - sankey diagram
-  - waterfall chart
-  - bullet chart
-  - small multiples
-  - box plot
-  - hexbin
-  - loess smoothing
-  - confidence band
 ---
 
 # Elevation swaps
@@ -68,4 +47,4 @@ When you see the pattern on the left, consider the swap on the right.
 ## When to break convention
 - For scroll-stopping media, a striking custom form can beat a plain bar — keep exact value labels.
 
-Related: [[00-selection]]
+Related: [00-selection](chart-types/00-selection.md)

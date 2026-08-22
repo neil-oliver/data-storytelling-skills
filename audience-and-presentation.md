@@ -1,33 +1,12 @@
 ---
 scope: Tailor the chart to the reader, deliver it well, and read charts critically.
 use_when: Choosing depth, framing, and sequencing for a specific audience or room.
-aliases:
-  - Audience & presentation
-tags:
-  - data-viz
-  - audience
-  - audience-tailoring
-  - presentation-delivery
-  - critical-reading
-  - storyboarding
-keywords:
-  - box plots
-  - kde and violin plots
-  - storyboarding
-  - reading charts critically
-  - interactive slider
-  - log toggle
-  - audience tailoring
-  - leadership dashboards
-  - number precision
 ---
 
 # Audience & presentation
 
 ## Tailor to the audience
 - Frame every visual around the audience's context, priorities, and decisions; lead with what matters most to them.
-- Decide whether the reader wants exact values or overall direction; design for that one job.
-- Never serve discovery and direction at once; hybrids serve neither.
 - Filter to the three or four findings that inform the decision.
 - Give each view one key idea, decision, or topic.
 - For leadership, default to simple, quick-read charts; keep updates to one to three KPIs.
@@ -46,9 +25,6 @@ keywords:
 - Actively control where the audience looks; don't leave the key point unemphasized.
 - Sanity check before publishing: is the most important thing clear in five seconds?
 - State findings in confident language, not hedges like "kind of might maybe".
-- Write the opposite headline first to test whether a competing story holds.
-- Name your starting assumption before analysing, to expose bias.
-- Have a reviewer challenge your axis, comparison, and omissions before shipping.
 - Turn pushback into credibility by answering with composure.
 - Pair fonts for legibility and professionalism across charts and slides.
 - Match supporting-text format to context: bullets for slides, paragraphs for docs.
@@ -63,4 +39,4 @@ keywords:
 - Expose an arbitrary cutoff as an interactive slider rather than hard-coding one split.
 - Offer an un-log toggle so viewers can inspect raw magnitudes behind a log view.
 
-Related: [[so-what]] · [[dashboards]] · [[interaction]]
+Related: [so-what](so-what.md) · [dashboards](delivery/dashboards.md) · [interaction](delivery/interaction.md)

@@ -1,25 +1,6 @@
 ---
 scope: Format numbers and dates; style and order marks.
 use_when: Setting number precision, units, styling, or sort order.
-aliases:
-  - Formatting & ordering
-tags:
-  - data-viz
-  - delivery
-  - number-formatting
-  - date-formatting
-  - sorting
-  - bar-styling
-keywords:
-  - number formatting
-  - date formatting
-  - rounding precision
-  - thousands separators
-  - abbreviate large numbers
-  - solid vs dashed lines
-  - sort bars by value
-  - stacked segment order
-  - histogram bar gaps
 ---
 
 # Formatting & ordering
@@ -43,4 +24,4 @@ keywords:
 - Order stacked segments by size or a stable, meaningful sequence.
 - Cluster related categories together instead of scattering them along the axis.
 
-Related: [[labels-and-legends]] · [[comparison]]
+Related: [labels-and-legends](labels-and-legends.md) · [comparison](../chart-types/comparison.md)

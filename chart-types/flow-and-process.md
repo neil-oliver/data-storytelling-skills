@@ -1,23 +1,6 @@
 ---
 scope: Show movement, sequence, or drop-off through stages.
 use_when: The story is how quantities progress, split, merge, or bridge between totals.
-aliases:
-  - Flow & process charts
-tags:
-  - data-viz
-  - chart-types
-  - funnel-chart
-  - sankey-diagram
-  - waterfall-chart
-keywords:
-  - funnel chart
-  - sankey diagram
-  - waterfall chart
-  - drop-off analysis
-  - variance bridge
-  - conversion rate
-  - flow diagram
-  - budget to actual
 ---
 
 # Flow & process charts
@@ -39,4 +22,4 @@ keywords:
 - Avoid waterfalls with too many steps; they clutter.
 - Use waterfalls for variance bridges: budget-to-actual or period-to-period drivers.
 
-Related: [[ranking-and-deviation]] · [[geospatial]]
+Related: [ranking-and-deviation](ranking-and-deviation.md) · [geospatial](geospatial.md)

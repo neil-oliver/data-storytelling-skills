@@ -1,25 +1,6 @@
 ---
 scope: Add annotations, reference lines, and context markers.
 use_when: Explaining a shape, moment, threshold, or event on the chart.
-aliases:
-  - Annotations
-tags:
-  - data-viz
-  - delivery
-  - annotations
-  - reference-lines
-  - threshold-lines
-  - benchmarking
-keywords:
-  - reference lines
-  - threshold line
-  - benchmark comparison
-  - directional arrows
-  - quadrant labels
-  - normal variation band
-  - inflection points
-  - missing data spans
-  - waterfall starting value
 ---
 
 # Annotations
@@ -50,4 +31,4 @@ keywords:
 - Add a background-color outline behind annotation text when it overlays chart elements.
 - Shade grey ranges to mark contextual periods or zones.
 
-Related: [[labels-and-legends]] · [[so-what]]
+Related: [labels-and-legends](labels-and-legends.md) · [so-what](../so-what.md)

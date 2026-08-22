@@ -1,45 +1,26 @@
 ---
 scope: Pick a chart form from the analytical task.
 use_when: Choosing which chart to build.
-aliases:
-  - Chart selection
-tags:
-  - data-viz
-  - chart-types
-  - chart-selection
-  - decision-guide
-  - chart-taxonomy
-keywords:
-  - chart selection
-  - choosing a chart type
-  - comparison charts
-  - change over time
-  - part-to-whole charts
-  - distribution charts
-  - correlation charts
-  - flow and process charts
-  - geospatial charts
-  - small multiples
 ---
 
 # Chart selection
 
 ## Task → form
 
-- **Comparison across categories** → bars, columns, dot/lollipop plots. → [[comparison]]
-- **Change over time** → line or area; two points → slope; ranking over time → bump. → [[change-over-time]]
-- **Part-to-whole** → pie (≤5), waffle, stacked / 100% stacked bar, treemap, ternary (3 parts). → [[part-to-whole]]
-- **Distribution / spread** → histogram, box, strip/beeswarm, ECDF, KDE, violin, ridgeline. → [[distribution]]
-- **Correlation** → scatter; overplotting → hexbin/density; add regions → quadrant. → [[correlation]]
-- **Ranking / deviation** → sorted bars; signed gap → diverging bars; survey → Likert. → [[ranking-and-deviation]]
-- **Flow / process / drop-off** → funnel, sankey, waterfall. → [[flow-and-process]]
-- **Value across a matrix** → heatmap. → [[matrix-and-heatmap]]
-- **Geographic pattern** → choropleth (rates only), flow map, isochrone. → [[geospatial]]
-- **Single headline value** → big number, bullet, gauge, progress. → [[single-value]]
-- **Uncertainty / forecast** → confidence band or fan chart. → [[change-over-time]]
-- **Many series or cohorts at once** → small multiples. → [[small-multiples]]
-- **Exact values for lookup** → table. → [[tables]]
-- **Cyclical or niche** → radial, polar, hemicycle (sparingly). → [[specialized]]
+- **Comparison across categories** → bars, columns, dot/lollipop plots. → [comparison](comparison.md)
+- **Change over time** → line or area; two points → slope; ranking over time → bump. → [change-over-time](change-over-time.md)
+- **Part-to-whole** → pie (≤5), waffle, stacked / 100% stacked bar, treemap, ternary (3 parts). → [part-to-whole](part-to-whole.md)
+- **Distribution / spread** → histogram, box, strip/beeswarm, ECDF, KDE, violin, ridgeline. → [distribution](distribution.md)
+- **Correlation** → scatter; overplotting → hexbin/density; add regions → quadrant. → [correlation](correlation.md)
+- **Ranking / deviation** → sorted bars; signed gap → diverging bars; survey → Likert. → [ranking-and-deviation](ranking-and-deviation.md)
+- **Flow / process / drop-off** → funnel, sankey, waterfall. → [flow-and-process](flow-and-process.md)
+- **Value across a matrix** → heatmap. → [matrix-and-heatmap](matrix-and-heatmap.md)
+- **Geographic pattern** → choropleth (rates only), flow map, isochrone. → [geospatial](geospatial.md)
+- **Single headline value** → big number, bullet, gauge, progress. → [single-value](single-value.md)
+- **Uncertainty / forecast** → confidence band or fan chart. → [change-over-time](change-over-time.md)
+- **Many series or cohorts at once** → small multiples. → [small-multiples](small-multiples.md)
+- **Exact values for lookup** → table. → [tables](tables.md)
+- **Cyclical or niche** → radial, polar, hemicycle (sparingly). → [specialized](specialized.md)
 
 ## Selection rules
 
@@ -53,6 +34,6 @@ keywords:
 - Animate over time or space only when the shifting distribution is the insight.
 - For precise two-moment comparison prefer small multiples, static maps, or tables over animation.
 - Pick the form that supports your point, then verify it stays honest.
-- When the default form is cluttered or off-message, reframe it — see [[elevation-swaps]].
+- When the default form is cluttered or off-message, reframe it — see [elevation-swaps](../elevation-swaps.md).
 
-Related: [[elevation-swaps]] · [[so-what]]
+Related: [elevation-swaps](../elevation-swaps.md) · [so-what](../so-what.md)

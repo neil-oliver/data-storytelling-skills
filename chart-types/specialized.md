@@ -1,24 +1,6 @@
 ---
 scope: Cyclical, positional, and niche chart forms — use sparingly.
 use_when: Considering radial, polar, hemicycle, or other unconventional forms.
-aliases:
-  - Specialized & cyclical charts
-tags:
-  - data-viz
-  - chart-types
-  - radial-chart
-  - polar-area
-  - radar-chart
-  - hemicycle
-keywords:
-  - radial bar chart
-  - polar area chart
-  - hemicycle chart
-  - parliament chart
-  - radar chart
-  - spider chart
-  - parallel coordinates
-  - cyclical data
 ---
 
 # Specialized & cyclical charts
@@ -41,4 +23,4 @@ keywords:
 - Keep exact value labels on stylized or illustrated marks so accuracy survives the metaphor.
 - Match chart form to venue: conventional for boardrooms, distinctive for media.
 
-Related: [[comparison]] · [[anti-patterns]] · [[audience-and-presentation]]
+Related: [comparison](comparison.md) · [anti-patterns](../anti-patterns.md) · [audience-and-presentation](../audience-and-presentation.md)

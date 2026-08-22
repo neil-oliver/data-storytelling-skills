@@ -1,42 +1,62 @@
----
-scope: Map of the data-visualization playbook — what lives where.
-use_when: Locating the rule file for a specific decision.
-aliases:
-  - Data Visualization Playbook Map
-tags:
-  - data-viz
-  - index
-  - navigation
-  - four-layer-method
-  - playbook-map
-  - rule-corpus
-keywords:
-  - data visualization playbook
-  - chart type selection
-  - so what filter
-  - delivery principles
-  - elevation swaps
-  - anti-patterns
-  - audience and presentation
-  - four-layer method
----
-
 # Data Visualization Playbook
 
-A source-agnostic rule set for choosing and designing the right chart. Written for an LLM:
-every line is a prescriptive rule, not prose. Load only the file that matches the decision in
-front of you.
+An [Agent Skill](https://code.claude.com/docs/en/skills) for data storytelling: a working
+method plus ~600 prescriptive rules for choosing, building, and reviewing data
+visualizations. Written for an LLM agent — every line is a rule or a procedure, not prose —
+and source- and medium-agnostic: it applies whether the output is plotting code, inline
+SVG, a BI dashboard, or an exported image.
 
-**How to use it:** the traversal procedure — the four-layer method, per-layer file loads, and
-handoffs — lives in [[SKILL]]. This file is just the map.
+It covers two jobs with one shared rule corpus:
 
-## Map
+- **Create** — recommend and build the right chart from a question and/or a dataset, via an
+  iterative loop: envision the ideal outcome, test it against the real data, build the
+  chart for real, force the "so what", then polish delivery.
+- **Review** — critique an existing chart (image, code, or spec) through three independent
+  lenses — integrity, form, and delivery — and return prioritized, concrete fixes.
 
-- [[SKILL]] — the method: how to traverse this corpus, layer by layer, as one agent or a chain.
-- [[data]] — Layer 1: what to plot, and preparing it (selection, statistics, normalization, binning, missing data).
-- `chart-types/` — Layer 2: pick a form. [[00-selection]] maps analytical task → form; then one file per category (comparison, change over time, part-to-whole, distribution, correlation, ranking & deviation, flow & process, matrix/heatmap, geospatial, single value, small multiples, tables, specialized).
-- [[so-what]] — Layer 3: the filter that forces an insight before a chart ships.
-- `delivery/` — Layer 4: present it. [[00-principles]] holds the cross-cutting rules; then titles, subtitles, axes & scales, annotations, color & emphasis, color palettes, labels & legends, decluttering, formatting & ordering, dashboards, interaction, polish, typography.
-- `patterns/` — [[elevation-swaps]]: default → better reframes.
-- [[anti-patterns]] — what never to do, including cognitive-bias guards.
-- [[audience-and-presentation]] — tailor to the reader, present it, and read charts critically.
+The procedure for both lives in [SKILL.md](SKILL.md). Everything else is a rule corpus the
+agent loads one file at a time, as each decision comes up.
+
+## Install
+
+**Claude Code** — clone into your skills directory (the directory name becomes the skill
+name):
+
+```sh
+# personal (all projects)
+git clone https://github.com/neil-oliver/data-storytelling-skills ~/.claude/skills/data-viz-playbook
+
+# or per-project
+git clone https://github.com/neil-oliver/data-storytelling-skills .claude/skills/data-viz-playbook
+```
+
+Claude then applies the skill automatically whenever a task involves charts, or on demand
+via `/data-viz-playbook`.
+
+**Other harnesses** — point the agent at `SKILL.md` and give it file access to the repo;
+the skill assumes nothing beyond the ability to read files and produce charts in whatever
+medium the task uses.
+
+**Obsidian** — the repo doubles as a vault: open the folder in Obsidian and the standard
+Markdown links resolve like wikilinks.
+
+## Layout
+
+```
+SKILL.md                    the procedure: entry points, the create loop, the review pass,
+                            and where parallel work pays off
+data.md                     what to plot and how to shape it (slices, baselines,
+                            statistics, normalization, binning, missing data)
+so-what.md                  the gate: no one-sentence takeaway, no chart
+anti-patterns.md            the ship checklist: honesty, distortion, and bias failures
+elevation-swaps.md          default chart → sharper reframe, when the obvious form fails
+audience-and-presentation.md  tailoring depth, framing, and sequencing to a reader or room
+chart-types/                one file per chart family; 00-selection.md maps
+                            analytical task → form and routes to the right file
+delivery/                   one file per presentation topic (titles, axes, color, labels,
+                            annotations, decluttering, dashboards, interaction, …);
+                            00-principles.md holds the cross-cutting rules
+```
+
+Every corpus file carries `scope` and `use_when` frontmatter so an agent can decide
+whether to load it without opening it.
