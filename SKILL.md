@@ -7,10 +7,9 @@ description: >-
   should I show this?"), building a chart from a question or dataset, preparing and shaping
   data to plot, writing chart titles and annotations, or reviewing and improving an existing
   chart — usually a screenshot or image, sometimes the plotting code or dashboard spec
-  behind it. Use it even when the word "chart" is
-  absent — "visualize this", "show the trend", "what's wrong with this graph", "make this
-  dashboard clearer". Source- and medium-agnostic: it applies to any data source and any
-  output medium.
+  behind it. Use it even when the word "chart" is absent — "visualize this", "show the
+  trend", "what's wrong with this graph", "make this dashboard clearer". Source- and
+  medium-agnostic: it applies to any data source and any output medium.
 ---
 
 # Data Visualization Playbook
@@ -26,8 +25,8 @@ cross-cutting root files.
 
 - **Create** — you have a question, a dataset, or both, and need the right chart
   recommended and built → run [the create loop](#the-create-loop).
-- **Review** — a chart already exists (image, code, spec, or dashboard) and needs critique
-  or improvement → run [the review pass](#the-review-pass).
+- **Review** — a chart already exists — usually as an image — and needs critique or
+  improvement → run [the review pass](#the-review-pass).
 - **Render** — optional, and additive to either: the deliverable is a finished image file
   rather than a design someone else will build → run [the render stage](#the-render-stage).
 
@@ -105,10 +104,11 @@ Explore freely when you don't yet know what the data holds, but return with an a
 **4. Build it for real.** Produce the actual chart with the actual data, in whatever
 medium the output calls for. Not a mock-up:
 real numbers, rendered where you can see the result. You cannot judge a chart you haven't
-built, and the next step depends on looking at it. Budget a few render-and-look passes
-for layout alone — overflowing titles, colliding labels, annotations landing on the axis
-are invisible in the code and obvious in the image. That convergence is separate from,
-and usually faster than, the analytical loop around it.
+built, and the next step depends on looking at it. What you need here is a chart good
+enough to judge the story by, not a finished artifact — if the layout is rough but the
+shape of the story is legible, that is enough to reach the gate. Production polish belongs
+in delivery, and in [the render stage](#the-render-stage) when an image file is the
+deliverable.
 
 **5. The so-what gate.** Load [so-what.md](so-what.md). Look at the built chart and state
 its point in one sentence: metric, cause, impact, next action. Then write the opposite

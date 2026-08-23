@@ -9,7 +9,7 @@ use_when: Choosing typefaces, sizes, weights, and alignment for chart text.
 - Avoid narrow, condensed, or very thin fonts; they strain and fade.
 - Set body, labels, and annotations in regular weight for easiest reading.
 - Build hierarchy from weight, size, and color — not many typefaces.
-- Keep chart text at least 12px; smaller sizes get hard to parse.
+- Keep chart text at least 12px on screen, or about 9pt in print; below that, parsing gets hard. When a narrow column won't allow it, shorten or restructure the labels rather than shrinking under the floor.
 - Set most text near-black; reserve grey for secondary detail.
 - Start all text small and grey, then emphasize only what matters.
 - Give titles the biggest, boldest, highest-contrast text.

@@ -1,5 +1,5 @@
 ---
-scope: Produce a finished image file to a fixed quality bar — canvas, regions, text fitting, label collisions, export, and the visual check.
+scope: Produce a finished image file to a fixed quality bar — canvas, regions, text fitting, label collisions, vector specifics, export, and the visual check.
 use_when: The deliverable is an image someone will drop into a slide, doc, or page — not a recommendation, a spec, or live code.
 ---
 
@@ -34,6 +34,7 @@ labels, annotation. This stage is about the artifact surviving contact with a re
 - Measure text extent before placing it; text that overflows the canvas is invisible, not merely small.
 - Judge the smallest text at final display size, not at authoring size.
 - Keep every glyph inside the canvas on all four edges, including descenders and rotated labels.
+- Flow the title, subtitle, plot, and footer from measured heights, not fixed offsets; the moment a title wraps to an extra line, fixed offsets put it on top of whatever sits below.
 
 ## Resolve label collisions
 - Detect overlapping direct labels and fix them: nudge apart, add a leader line, or drop the least important.
@@ -44,9 +45,18 @@ labels, annotation. This stage is about the artifact surviving contact with a re
 ## Verify, then export
 - Look at the rendered image, not the code or markup that produced it. Clipping, overlap, and collisions are invisible in source and obvious on screen.
 - Read every number printed on the chart back against the source data; a formatter that rounds, scales, or truncates wrongly prints a confidently false value.
+- Check the glyphs that actually rendered, not just the strings you formatted: currency, math, and markup characters are silently swallowed or restyled by some text engines, so text that is correct in code can be wrong on the canvas.
 - Confirm nothing is cut off at any edge and the smallest text is legible.
 - Check the palette survives its destination: grayscale, projector, and a dark background.
 - Confirm fonts are embedded or fall back to a family that exists wherever the file will open.
 - Re-render after each fix and look again; two or three passes is normal, and the loop exits on the image, not on the code.
+
+## When the output is vector
+
+- Convert text to outlines, or embed the font in the file; a bare font-family reference reflows or substitutes wherever that font is absent.
+- Keep the file self-contained — no external images, stylesheets, or font URLs. It has to render standalone on a machine you will never see.
+- Author at the narrowest width the file will be placed at: the consumer sets the final size, and scaling up degrades gracefully where scaling down drives text under the legibility floor.
+- Set a minimum stroke weight that survives being scaled down; hairlines that read at full size vanish at half.
+- Rasterize the shipped file with a renderer independent of the one that wrote it, and look at that. Exporting a raster copy from the same call inspects a different artifact and hides malformed markup, unintended transparency, and missing fonts.
 
 Related: [polish](delivery/polish.md) · [typography](delivery/typography.md) · [labels-and-legends](delivery/labels-and-legends.md) · [annotations](delivery/annotations.md)
