@@ -17,8 +17,9 @@ It covers three jobs with one shared rule corpus:
   fixed quality bar. The corpus never names a library or a format, so the same design can be
   rendered by any tool, or handed to a person to build.
 
-The procedure for all three lives in [SKILL.md](SKILL.md). Everything else is a rule corpus the
-agent loads one file at a time, as each decision comes up.
+The procedure for all three lives in [SKILL.md](skills/data-viz-playbook/SKILL.md).
+Everything else is a rule corpus the agent loads one file at a time, as each decision
+comes up.
 
 Throughout, the agent is meant to work as a companion: it asks a clarifying question only
 when the answer would change the chart, and reports the core choices as it makes them —
@@ -39,28 +40,20 @@ Installing is therefore just cloning to the right path.
 /plugin install data-viz-playbook@data-storytelling-skills
 ```
 
-Or clone straight into a skills directory — `~/.claude/skills/<name>/` for all projects,
-`.claude/skills/<name>/` for one:
+**Cursor and Codex, or Claude Code without the plugin** — the skill itself lives in
+`skills/data-viz-playbook/`. Clone the repo once, then link that directory into whichever
+skill roots you use; symlinked skill directories load correctly in all three tools:
 
 ```sh
-git clone https://github.com/neil-oliver/data-storytelling-skills ~/.claude/skills/data-viz-playbook
+git clone https://github.com/neil-oliver/data-storytelling-skills ~/repos/data-storytelling-skills
+SKILL=~/repos/data-storytelling-skills/skills/data-viz-playbook
+
+ln -s "$SKILL" ~/.claude/skills/data-viz-playbook    # Claude Code
+ln -s "$SKILL" ~/.agents/skills/data-viz-playbook    # Cursor + Codex
 ```
 
-**Cursor and Codex** — both read `~/.agents/skills/` (and `.agents/skills/` inside a
-project), so one clone covers them:
-
-```sh
-git clone https://github.com/neil-oliver/data-storytelling-skills ~/.agents/skills/data-viz-playbook
-```
-
-**All three from one copy** — skill directories may be symlinked, so clone once and link it
-into each root:
-
-```sh
-git clone https://github.com/neil-oliver/data-storytelling-skills ~/skills/data-viz-playbook
-ln -s ~/skills/data-viz-playbook ~/.claude/skills/data-viz-playbook   # Claude Code
-ln -s ~/skills/data-viz-playbook ~/.agents/skills/data-viz-playbook   # Cursor + Codex
-```
+Copying the directory instead of linking works just as well; linking means `git pull`
+updates every tool at once.
 
 Which roots each tool reads:
 
@@ -84,21 +77,24 @@ Markdown links resolve like wikilinks.
 ## Layout
 
 ```
-SKILL.md                    the procedure: entry points, the create loop, the review pass,
-                            the optional render stage, and where parallel work pays off
-data.md                     what to plot and how to shape it (slices, baselines,
-                            statistics, normalization, binning, missing data)
-so-what.md                  the gate: no one-sentence takeaway, no chart
-render.md                   optional: canvas, text fitting, label collisions, export, and
-                            the visual check for producing an image file
-anti-patterns.md            the ship checklist: honesty, distortion, and bias failures
-elevation-swaps.md          default chart → sharper reframe, when the obvious form fails
-audience-and-presentation.md  tailoring depth, framing, and sequencing to a reader or room
-chart-types/                one file per chart family; 00-selection.md maps
-                            analytical task → form and routes to the right file
-delivery/                   one file per presentation topic (titles, axes, color, labels,
-                            annotations, decluttering, dashboards, interaction, …);
-                            00-principles.md holds the cross-cutting rules
+skills/data-viz-playbook/     the skill itself — everything below sits inside it
+  SKILL.md                    the procedure: entry points, the create loop, the review
+                              pass, the optional render stage, and parallel work
+  data.md                     what to plot and how to shape it (slices, baselines,
+                              statistics, normalization, binning, missing data)
+  so-what.md                  the gate: no one-sentence takeaway, no chart
+  render.md                   optional: canvas, text fitting, label collisions, export,
+                              and the visual check for producing an image file
+  anti-patterns.md            the ship checklist: honesty, distortion, and bias failures
+  elevation-swaps.md          default chart → sharper reframe, when the obvious form fails
+  audience-and-presentation.md
+                              tailoring depth, framing, and sequencing to a reader or room
+  chart-types/                one file per chart family; 00-selection.md maps
+                              analytical task → form and routes to the right file
+  delivery/                   one file per presentation topic (titles, axes, color, labels,
+                              annotations, decluttering, dashboards, interaction, …);
+                              00-principles.md holds the cross-cutting rules
+.claude-plugin/               plugin and marketplace manifests for Claude Code install
 ```
 
 `SKILL.md` names what each corpus file covers, so the agent picks the right one before
