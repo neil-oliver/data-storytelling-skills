@@ -41,19 +41,29 @@ silence and noise cost trust equally:
 yourself — from the request, from looking at the data, or with a stated default. Ask when
 a genuine fork remains: the metric or question is ambiguous ("growth" of what, measured
 how?), the audience or medium is unknown *and* would change the form, explore-vs-assert
-is unclear, or the request supports two defensible readings. Ask at the natural moment —
-usually while framing, or when a review can't reconstruct the chart's intent — batch the
-questions into one round, and lead each with your recommended answer. Never ask what
-looking at the data would tell you, and never ask permission for choices the corpus
-already settles.
+is unclear, or the request supports two defensible readings. Between asking and
+defaulting, weigh what a wrong guess costs: state a default when being wrong means a
+cheap re-cut — size, palette, rounding — and ask when it means a rebuild, because the
+metric, the question, or the form was wrong. Ask at the natural moment — usually while
+framing, or when a review can't reconstruct the chart's intent — batch the questions into
+one round, and lead each with your recommended answer. Never ask what looking at the data
+would tell you, and never ask permission for choices the corpus already settles. When no
+one is there to answer — a scheduled run, a batch job — never stall: take the best
+default and hand it over with the assumption stated plainly enough to be corrected.
 
 **Surface the core choices as they happen.** One or two sentences at each hinge: the
-target you're envisioning and why; the feasibility verdict when the data talks back —
-especially a loop-back that changes what the user will receive; the takeaway when it
-passes the gate, or "no honest story" when it doesn't; a review's verdict before its
-detail. Don't narrate rule-level execution — tick formats, exact hues, label placement;
-the shipped chart shows those. If you looped, say what changed and why, not every step
-you retook.
+target you're envisioning and why; the feasibility verdict when the data talks back; the
+takeaway when it passes the gate, or "no honest story" when it doesn't; a review's
+verdict before its detail. These are the candidates, not a checklist to complete — scale
+the budget to the job, so a single quick chart may warrant only the target up front and
+the takeaway at the end. Don't narrate rule-level execution — tick formats, exact hues,
+label placement; the shipped chart shows those. If you looped, say what changed and why,
+not every step you retook.
+
+The one that always earns its sentence is a story that shifted: when the data moved the
+takeaway off what was asked for, say so *before* handing over the chart, naming both the
+result they expected and what replaced it. Finding out from the title feels like an
+ambush; hearing it first reads as the method working.
 
 ## The create loop
 
@@ -93,7 +103,10 @@ Explore freely when you don't yet know what the data holds, but return with an a
 **4. Build it for real.** Produce the actual chart with the actual data in the output
 medium — run the plotting code, render the SVG, fill the dashboard spec. Not a mock-up:
 real numbers, rendered where you can see the result. You cannot judge a chart you haven't
-built, and the next step depends on looking at it.
+built, and the next step depends on looking at it. Budget a few render-and-look passes
+for layout alone — overflowing titles, colliding labels, annotations landing on the axis
+are invisible in the code and obvious in the image. That convergence is separate from,
+and usually faster than, the analytical loop around it.
 
 **5. The so-what gate.** Load [so-what.md](so-what.md). Look at the built chart and state
 its point in one sentence: metric, cause, impact, next action. Then write the opposite
