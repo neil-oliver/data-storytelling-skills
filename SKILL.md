@@ -32,6 +32,29 @@ cross-cutting root files.
 Both share the same corpus and the same bar: a chart ships only with a one-sentence
 takeaway it visibly supports.
 
+## Working with the user
+
+Work as a companion, not a black box. Two habits keep it that way, and both have a bar —
+silence and noise cost trust equally:
+
+**Ask only when the answer would change the chart.** First try to resolve the gap
+yourself — from the request, from looking at the data, or with a stated default. Ask when
+a genuine fork remains: the metric or question is ambiguous ("growth" of what, measured
+how?), the audience or medium is unknown *and* would change the form, explore-vs-assert
+is unclear, or the request supports two defensible readings. Ask at the natural moment —
+usually while framing, or when a review can't reconstruct the chart's intent — batch the
+questions into one round, and lead each with your recommended answer. Never ask what
+looking at the data would tell you, and never ask permission for choices the corpus
+already settles.
+
+**Surface the core choices as they happen.** One or two sentences at each hinge: the
+target you're envisioning and why; the feasibility verdict when the data talks back —
+especially a loop-back that changes what the user will receive; the takeaway when it
+passes the gate, or "no honest story" when it doesn't; a review's verdict before its
+detail. Don't narrate rule-level execution — tick formats, exact hues, label placement;
+the shipped chart shows those. If you looped, say what changed and why, not every step
+you retook.
+
 ## The create loop
 
 This is a loop, not a waterfall. Expect to go around parts of it two or three times —
@@ -41,7 +64,9 @@ takeaway never survived contact with the real numbers.
 
 **1. Frame it.** Pin down the question, who is asking, the decision the answer feeds,
 and the output medium (slide, doc, dashboard, notebook, social) — the medium sets the
-aspect ratio, size, and interactivity budget everything downstream must fit.
+aspect ratio, size, and interactivity budget everything downstream must fit. A gap here
+that would change what you build is the one thing worth a clarifying question now (see
+[Working with the user](#working-with-the-user)).
 Name your intent — exploring for patterns or asserting a known point — and your starting
 assumption, out loud: bias enters here, not at the color picker. If several questions hide
 inside the request, split them; one chart does one job. When a specific audience, reader,
@@ -76,7 +101,8 @@ headline and check whether it survives the same chart — keep the strongest hon
 interpretation, not the most persuasive one.
 - The takeaway holds → carry the sentence into delivery; it becomes the title.
 - It's weaker or different than expected → loop: revise the target (2) or the slice,
-  baseline, or statistic (3), rebuild (4), retest.
+  baseline, or statistic (3), rebuild (4), retest — and tell the user when the story has
+  shifted from what they asked for.
 - No honest story exists → say so. "No meaningful difference" is a legitimate, reportable
   finding; a chart without a point is not.
 
@@ -111,7 +137,8 @@ is known about its data and audience.
 taxonomy in [chart-types/00-selection.md](chart-types/00-selection.md)) and its claimed
 takeaway, held to the bar in [so-what.md](so-what.md). If the takeaway can't be stated
 from the chart alone, record that as finding #1 — it is usually the root cause of
-everything else.
+everything else — and if you also can't tell what the chart was *trying* to say, ask its
+owner rather than reviewing a guess.
 
 **2. Run three lenses.** They are independent reads of the same artifact, so run them in
 parallel (see [Parallel work](#parallel-work)):
@@ -131,9 +158,11 @@ parallel (see [Parallel work](#parallel-work)):
 **3. Report — then fix, if asked.** Deliver a one-line verdict; then the single
 highest-leverage change — the fix that unblocks or rewrites the most other findings,
 often but not always the missing takeaway from step 1; then prioritized findings, each
-naming the violated rule and the concrete fix. Integrity findings outrank form; form outranks polish. To apply the
-fixes yourself, enter the create loop at step 3 or 4 with the reconstructed intent as the
-target.
+naming the violated rule and the concrete fix. Integrity findings outrank form; form
+outranks polish. A critique is feedback on someone's work: name what the chart gets right
+before what it gets wrong, and aim every finding at the chart, not its author. To apply
+the fixes yourself, enter the create loop at step 3 or 4 with the reconstructed intent as
+the target.
 
 ## Parallel work
 

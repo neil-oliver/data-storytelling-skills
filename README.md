@@ -17,6 +17,11 @@ It covers two jobs with one shared rule corpus:
 The procedure for both lives in [SKILL.md](SKILL.md). Everything else is a rule corpus the
 agent loads one file at a time, as each decision comes up.
 
+Throughout, the agent is meant to work as a companion: it asks a clarifying question only
+when the answer would change the chart, and reports the core choices as it makes them —
+the target form, what the data turned out to support, and the takeaway that survived —
+without narrating every rule it applies.
+
 ## Install
 
 **Claude Code** — clone into your skills directory (the directory name becomes the skill
