@@ -6,8 +6,8 @@ description: >-
   plot, dashboard, KPI tile, or any data visualization: recommending a chart type ("how
   should I show this?"), building a chart from a question or dataset, preparing and shaping
   data to plot, writing chart titles and annotations, or reviewing and improving an existing
-  chart supplied as an image, plotting code (matplotlib, plotly, ggplot, d3, Recharts,
-  Vega-Lite), inline SVG, or a BI/dashboard spec. Use it even when the word "chart" is
+  chart — usually a screenshot or image, sometimes the plotting code or dashboard spec
+  behind it. Use it even when the word "chart" is
   absent — "visualize this", "show the trend", "what's wrong with this graph", "make this
   dashboard clearer". Source- and medium-agnostic: it applies to any data source and any
   output medium.
@@ -146,8 +146,16 @@ will build themselves, continue to [the render stage](#the-render-stage).
 
 ## The review pass
 
-Input: a chart as an image, plotting code, a spec, or a whole dashboard — plus whatever
-is known about its data and audience.
+Input: most often an image — a screenshot, an export, a slide someone was sent — and
+sometimes the code or spec behind it, plus whatever is known about its data and audience.
+
+An image is enough to review most of what matters, and it also bounds what you may claim.
+Form, encoding, axis ranges, labels, color, clutter, and whether a takeaway lands are all
+judgeable from pixels alone. What happened to the data before it reached the chart is not:
+whether a category was dropped, a window cherry-picked, a statistic poorly chosen, or a
+comparison drawn across incompatible methodologies. Judge what you can see; put the rest
+to whoever owns the data as questions rather than findings, and say which of your findings
+would change if the answer went the other way.
 
 **1. Reconstruct intent.** Identify the analytical task the chart is attempting (use the
 taxonomy in [chart-types/00-selection.md](chart-types/00-selection.md)) and its claimed
