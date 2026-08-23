@@ -14,4 +14,4 @@ use_when: The chart is interactive (hover, drill, filter, animate).
 - Pair animation with pause and scrubbing controls so viewers can inspect key moments.
 - For interactive charts, address the reader directly to prompt exploration.
 
-Related: [decluttering](decluttering.md) · [audience-and-presentation](../audience-and-presentation.md)
+Related: [decluttering](essentials.md#decluttering) · [audience-and-presentation](../audience-and-presentation.md)

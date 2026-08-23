@@ -26,4 +26,4 @@ use_when: One metric is the whole story (KPI tiles, scorecards).
 - Prefer a bullet or big number over a gauge; gauges waste space.
 - Use a progress bar for completion toward a fixed, meaningful goal.
 
-Related: [dashboards](../delivery/dashboards.md) · [formatting-and-ordering](../delivery/formatting-and-ordering.md) · [so-what](../so-what.md)
+Related: [dashboards](../delivery/dashboards.md) · [formatting-and-ordering](../delivery/essentials.md#formatting-and-ordering) · [so-what](../so-what.md)

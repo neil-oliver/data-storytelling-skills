@@ -33,4 +33,4 @@ use_when: Readers need the numbers, not a shape.
 - Add search, sortable columns, and pagination for long tables.
 - Highlight the row of interest.
 
-Related: [change-over-time](change-over-time.md) · [formatting-and-ordering](../delivery/formatting-and-ordering.md) · [typography](../delivery/typography.md)
+Related: [change-over-time](change-over-time.md) · [formatting-and-ordering](../delivery/essentials.md#formatting-and-ordering) · [typography](../delivery/typography.md)

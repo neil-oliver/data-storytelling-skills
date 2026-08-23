@@ -27,4 +27,4 @@ use_when: The story is order (who leads) or over/under-performance versus a base
 - For a bridge between two totals, use a waterfall — see [flow-and-process](flow-and-process.md).
 - For paired before/after per category, use a dumbbell — see [comparison](comparison.md).
 
-Related: [comparison](comparison.md) · [flow-and-process](flow-and-process.md) · [color-and-emphasis](../delivery/color-and-emphasis.md)
+Related: [comparison](comparison.md) · [flow-and-process](flow-and-process.md) · [color-and-emphasis](../delivery/essentials.md#color-and-emphasis)

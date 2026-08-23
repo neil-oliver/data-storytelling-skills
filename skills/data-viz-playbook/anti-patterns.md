@@ -54,4 +54,4 @@ use_when: Reviewing a chart before shipping; catching distortion, clutter, and b
 - Don't annotate a movement smaller than the metric's typical wobble.
 - Don't split your argument into prose; embed it in the chart.
 
-Related: [so-what](so-what.md) · [axes-and-scales](delivery/axes-and-scales.md) · [data](data.md)
+Related: [so-what](so-what.md) · [axes-and-scales](delivery/essentials.md#axes-and-scales) · [data](data.md)

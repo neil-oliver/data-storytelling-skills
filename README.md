@@ -92,9 +92,11 @@ skills/data-viz-playbook/     the skill itself — everything below sits inside 
                               tailoring depth, framing, and sequencing to a reader or room
   chart-types/                one file per chart family; 00-selection.md maps
                               analytical task → form and routes to the right file
-  delivery/                   one file per presentation topic (titles, axes, color, labels,
-                              annotations, decluttering, dashboards, interaction, …);
-                              00-principles.md holds the cross-cutting rules
+  delivery/essentials.md      every rule that applies to every chart — principles, titles,
+                              subtitles, axes, color, labels, annotations, decluttering,
+                              formatting, polish — in one always-read file
+  delivery/                   plus four conditional files: color-palettes, dashboards,
+                              interaction, typography
 .claude-plugin/               plugin and marketplace manifests for Claude Code install
 ```
 

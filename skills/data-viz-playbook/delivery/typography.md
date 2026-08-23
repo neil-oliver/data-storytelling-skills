@@ -20,4 +20,4 @@ use_when: Choosing typefaces, sizes, weights, and alignment for chart text.
 - Choose fonts with lining, tabular figures so numerals share height and width and align.
 - Verify text meets accessibility contrast ratios against its background.
 
-Related: [polish](polish.md) · [color-and-emphasis](color-and-emphasis.md) · [titles](titles.md)
+Related: [polish](essentials.md#polish) · [color-and-emphasis](essentials.md#color-and-emphasis) · [titles](essentials.md#titles)

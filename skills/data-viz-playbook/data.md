@@ -45,4 +45,4 @@ use_when: Deciding which data, slice, window, or baseline to show, or choosing a
 - Label missing-data spans directly on the chart for honesty.
 - Include every relevant row, even ones that contradict your point.
 
-Related: [so-what](so-what.md) · [distribution](chart-types/distribution.md) · [axes-and-scales](delivery/axes-and-scales.md) · [anti-patterns](anti-patterns.md)
+Related: [so-what](so-what.md) · [distribution](chart-types/distribution.md) · [axes-and-scales](delivery/essentials.md#axes-and-scales) · [anti-patterns](anti-patterns.md)

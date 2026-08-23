@@ -31,4 +31,4 @@ use_when: Deciding whether a chart has a point worth showing, and how to state i
 - Treat identical numbers as supporting several valid stories; choose one and defend it.
 - Present apples-to-apples comparisons; equal-looking visuals must mean equal measures.
 
-Related: [data](data.md) · [00-principles](delivery/00-principles.md) · [anti-patterns](anti-patterns.md)
+Related: [data](data.md) · [00-principles](delivery/essentials.md#principles) · [anti-patterns](anti-patterns.md)

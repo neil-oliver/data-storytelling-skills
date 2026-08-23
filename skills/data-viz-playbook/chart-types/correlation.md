@@ -23,4 +23,4 @@ use_when: The story is whether variables move together, and where the outliers a
 - Partition a scatter into labeled quadrants to turn positions into named categories.
 - Split the two metrics at meaningful thresholds; name quadrants (e.g. winners, laggards).
 
-Related: [so-what](../so-what.md) · [annotations](../delivery/annotations.md)
+Related: [so-what](../so-what.md) · [annotations](../delivery/essentials.md#annotations)

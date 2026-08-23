@@ -61,4 +61,4 @@ use_when: The x-axis is time, or the story is a trend, turning point, rank shift
 - Use a line-and-bar combo for two measures on dual axes.
 - Avoid dual y-axes when both series share the same unit — the relationship becomes a scale artifact.
 
-Related: [small-multiples](small-multiples.md) · [annotations](../delivery/annotations.md) · [axes-and-scales](../delivery/axes-and-scales.md)
+Related: [small-multiples](small-multiples.md) · [annotations](../delivery/essentials.md#annotations) · [axes-and-scales](../delivery/essentials.md#axes-and-scales)

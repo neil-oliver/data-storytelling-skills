@@ -34,4 +34,4 @@ use_when: Constructing or picking the color palette for a chart or map.
 - Test every palette in grayscale and colorblind simulation before committing.
 - Ensure every color clears contrast against the background; pastels fail on white.
 
-Related: [color-and-emphasis](color-and-emphasis.md) · [typography](typography.md) · [matrix-and-heatmap](../chart-types/matrix-and-heatmap.md)
+Related: [color-and-emphasis](essentials.md#color-and-emphasis) · [typography](typography.md) · [matrix-and-heatmap](../chart-types/matrix-and-heatmap.md)

@@ -39,4 +39,4 @@ Use when: showing before/after for each category.
 ## Beyond bars
 - For multivariate or cyclical comparison, see [specialized](specialized.md) — use sparingly.
 
-Related: [ranking-and-deviation](ranking-and-deviation.md) · [specialized](specialized.md) · [formatting-and-ordering](../delivery/formatting-and-ordering.md)
+Related: [ranking-and-deviation](ranking-and-deviation.md) · [specialized](specialized.md) · [formatting-and-ordering](../delivery/essentials.md#formatting-and-ordering)

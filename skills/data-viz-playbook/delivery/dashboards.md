@@ -15,4 +15,4 @@ use_when: Composing more than one chart or metric into a single view.
 - Style each tile per [single-value.md](../chart-types/single-value.md); KPI context, delta labeling, and number formats live there and in the always-on delivery files.
 - Connect tiles to live source data so they refresh instead of going stale.
 
-Related: [single-value](../chart-types/single-value.md) · [decluttering](decluttering.md) · [audience-and-presentation](../audience-and-presentation.md)
+Related: [single-value](../chart-types/single-value.md) · [decluttering](essentials.md#decluttering) · [audience-and-presentation](../audience-and-presentation.md)

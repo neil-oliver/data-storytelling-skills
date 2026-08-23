@@ -21,4 +21,4 @@ use_when: Location is the actual question, not just an available attribute.
 ## When to map
 - Choose a map only when geographic pattern is the actual question; otherwise a bar or table is clearer.
 
-Related: [00-selection](00-selection.md) · [decluttering](../delivery/decluttering.md)
+Related: [00-selection](00-selection.md) · [decluttering](../delivery/essentials.md#decluttering)

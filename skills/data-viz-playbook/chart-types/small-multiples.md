@@ -12,4 +12,4 @@ use_when: Too many series overlap, or each series deserves its own panel.
 - Keep color associations consistent across panels.
 - Prefer small multiples over animation for side-by-side before/after comparison.
 
-Related: [elevation-swaps](../elevation-swaps.md) · [subtitles](../delivery/subtitles.md)
+Related: [elevation-swaps](../elevation-swaps.md) · [subtitles](../delivery/essentials.md#subtitles)

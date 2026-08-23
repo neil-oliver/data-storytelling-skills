@@ -47,6 +47,23 @@ part that decides whether the chart is worth shipping.
 Create and Review share the same corpus and the same bar: a chart ships only with a
 one-sentence takeaway it visibly supports.
 
+## What every create run reads
+
+Six files, in this order. They are the method; skipping one is how a chart ships with the
+wrong form, a claim the data doesn't support, or no point at all.
+
+1. [chart-types/00-selection.md](chart-types/00-selection.md) — analytical task → form
+2. the category file for the form (or forms) still in play
+3. [data.md](data.md) — what to plot, and shaping it
+4. [so-what.md](so-what.md) — the gate
+5. [delivery/essentials.md](delivery/essentials.md) — every rule that applies to every chart
+6. [anti-patterns.md](anti-patterns.md) — the pre-ship sweep
+
+[render.md](render.md) joins them whenever you produce the image yourself. Everything
+else in the corpus is genuinely conditional — load it only when its `use_when` matches.
+
+A review run reads the same corpus through the three lenses below, not this sequence.
+
 ## Working with the user
 
 Work as a companion, not a black box. Two habits keep it that way, and both have a bar —
@@ -138,15 +155,11 @@ interpretation, not the most persuasive one.
   finding; a chart without a point is not.
 
 **6. Deliver.** Design everything around the takeaway sentence. Load
-[delivery/00-principles.md](delivery/00-principles.md) and the always-on topics:
-[titles](delivery/titles.md) · [subtitles](delivery/subtitles.md) ·
-[axes-and-scales](delivery/axes-and-scales.md) ·
-[color-and-emphasis](delivery/color-and-emphasis.md) ·
-[labels-and-legends](delivery/labels-and-legends.md) ·
-[annotations](delivery/annotations.md) · [decluttering](delivery/decluttering.md) ·
-[formatting-and-ordering](delivery/formatting-and-ordering.md) ·
-[polish](delivery/polish.md). They are short — read the set in one batch rather than
-nine sequential opens. Add by context only if it applies:
+[delivery/essentials.md](delivery/essentials.md) — one file holding every rule that
+applies to every chart: principles, titles, subtitles, axes and scales, color and
+emphasis, labels and legends, annotations, decluttering, formatting and ordering, and
+polish. Read it whole; it is the always-on set, not a menu to sample. Then add only what
+the chart actually needs:
 - Building a color scale (sequential / diverging / categorical) → [delivery/color-palettes.md](delivery/color-palettes.md)
 - More than one chart, or KPI tiles, in one view → [delivery/dashboards.md](delivery/dashboards.md)
 - The chart is interactive (hover, filter, drill, animate) → [delivery/interaction.md](delivery/interaction.md)
@@ -195,10 +208,10 @@ parallel (see [Parallel work](#parallel-work)):
   file for the form on screen (judge the form it *should* be with 00-selection.md, not by
   loading extra category files), and [elevation-swaps.md](elevation-swaps.md): is this
   the right chart at all, and is there a sharper reframe?
-- **Delivery** — [delivery/00-principles.md](delivery/00-principles.md) plus delivery
-  topics, judging what the chart is missing as much as what it has: the create loop's
-  step-6 lists are the file checklist (always-on topics, plus the by-context ones that
-  apply). When a specific audience, reader, or venue is named, add
+- **Delivery** — [delivery/essentials.md](delivery/essentials.md), judging what the chart
+  is missing as much as what it has, plus any by-context file the chart's own features
+  call for (a color scale, a dashboard, interactivity, type). When a specific audience,
+  reader, or venue is named, add
   [audience-and-presentation.md](audience-and-presentation.md).
 
 **3. Report — then fix, if asked.** Deliver a one-line verdict; then the single

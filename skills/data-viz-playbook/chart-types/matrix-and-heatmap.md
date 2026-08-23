@@ -18,4 +18,4 @@ use_when: The story is a pattern across two categorical axes (e.g. rows × time)
 ## Density matrix
 - For thousands of overplotted points, use a hexbin — see [correlation](correlation.md).
 
-Related: [color-and-emphasis](../delivery/color-and-emphasis.md) · [formatting-and-ordering](../delivery/formatting-and-ordering.md)
+Related: [color-and-emphasis](../delivery/essentials.md#color-and-emphasis) · [formatting-and-ordering](../delivery/essentials.md#formatting-and-ordering)

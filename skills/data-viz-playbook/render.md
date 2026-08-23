@@ -65,4 +65,4 @@ labels, annotation. This stage is about the artifact surviving contact with a re
 - Set a minimum stroke weight that survives being scaled down; hairlines that read at full size vanish at half.
 - Rasterize the shipped file with a renderer independent of the one that wrote it, and look at that. Exporting a raster copy from the same call inspects a different artifact and hides malformed markup, unintended transparency, and missing fonts.
 
-Related: [polish](delivery/polish.md) · [typography](delivery/typography.md) · [labels-and-legends](delivery/labels-and-legends.md) · [annotations](delivery/annotations.md)
+Related: [polish](delivery/essentials.md#polish) · [typography](delivery/typography.md) · [labels-and-legends](delivery/essentials.md#labels-and-legends) · [annotations](delivery/essentials.md#annotations)

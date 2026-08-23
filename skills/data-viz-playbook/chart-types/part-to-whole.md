@@ -45,4 +45,4 @@ use_when: The story is composition — how a total breaks down.
 ## Over time
 - For composition over time, use a normalized stacked area — see [change-over-time](change-over-time.md).
 
-Related: [ranking-and-deviation](ranking-and-deviation.md) · [color-and-emphasis](../delivery/color-and-emphasis.md) · [formatting-and-ordering](../delivery/formatting-and-ordering.md)
+Related: [ranking-and-deviation](ranking-and-deviation.md) · [color-and-emphasis](../delivery/essentials.md#color-and-emphasis) · [formatting-and-ordering](../delivery/essentials.md#formatting-and-ordering)
