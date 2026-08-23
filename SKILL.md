@@ -136,13 +136,19 @@ nine sequential opens. Add by context only if it applies:
 - The chart is interactive (hover, filter, drill, animate) → [delivery/interaction.md](delivery/interaction.md)
 - Choosing typefaces, sizes, or weights → [delivery/typography.md](delivery/typography.md)
 
+When a rule applies but the input it needs doesn't exist — an inflation adjustment with no
+deflator, a benchmark nobody has — disclose the gap on the chart. Inventing the input is
+worse than the gap, and silently dropping the rule hides a real limit on what the chart
+can claim.
+
 Before shipping, sweep [anti-patterns.md](anti-patterns.md). An integrity failure found
 here goes back into the loop (3 or 5) — never into a footnote.
 
-**Output.** Deliver three things: the finished chart (or its code/spec), the one-sentence
-takeaway, and the data notes a reader needs to trust it — source, time window,
-exclusions, caveats. If what's wanted is an image file rather than something the recipient
-will build themselves, continue to [the render stage](#the-render-stage).
+**Output.** If what's wanted is an image file rather than something the recipient will
+build themselves, continue to [the render stage](#the-render-stage) before handing
+anything over. Either way, deliver three things: the finished chart (or its code/spec),
+the one-sentence takeaway, and the data notes a reader needs to trust it — source, time
+window, exclusions, caveats.
 
 ## The review pass
 

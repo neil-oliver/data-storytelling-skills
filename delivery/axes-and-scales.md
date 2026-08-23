@@ -15,10 +15,9 @@ use_when: Setting axis ranges, gridlines, ticks, or choosing a scale.
 - Choose a range proportionate to the data so effect size reads truthfully.
 - If a non-zero baseline is unavoidable, disclose the axis range prominently.
 - Annotate axis endpoints with meaning (higher/lower, before/after) so readers skip mental math.
-- Avoid negative axis values; use a labeled split axis with plain-language directions instead.
+- Avoid negative axis values; where you keep a value axis at all, use a labeled split axis with plain-language directions instead.
 - Anchor an index scale by labeling the 1.0 (or 100) baseline as the average.
-- Prefer a single axis over two when one scale suffices.
-- Avoid dual y-axes when both series share the same unit.
+- Prefer a single axis over two when one scale suffices; avoid dual y-axes outright when both series share the same unit.
 - Use a log scale for data spanning several orders of magnitude; label it, and avoid it for audiences who read it as linear.
 - Show units once at the top tick, not on every gridline.
 - Use enough ticks to read values, but not so many they crowd.

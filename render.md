@@ -17,7 +17,7 @@ labels, annotation. This stage is about the artifact surviving contact with a re
 ## Fix the canvas before drawing
 - Size the canvas from the medium first: wide for slides, portrait or column-width for documents, square for social, tall for mobile.
 - Fix the aspect ratio up front; resizing after layout invalidates every label position and text fit.
-- For raster output, render at twice the display size so text stays crisp when scaled or projected.
+- For raster output, render at twice the pixel dimensions the image will be displayed at, so text stays crisp when scaled or projected. When the destination is unstated, assume a full-bleed slide is displayed at 1280×720 and say what you assumed.
 - For vector output, set explicit dimensions and a matching coordinate system so the file scales without clipping.
 - Give the canvas an opaque background matching its destination; transparent backgrounds turn dark text invisible on dark slides.
 
@@ -26,12 +26,15 @@ labels, annotation. This stage is about the artifact surviving contact with a re
 - Never run the plot area to the canvas edge; reserve margin for marks and labels that extend past the last data point.
 - Size the right margin from the longest direct label plus its value, not from the plot.
 - Reserve the footer for the source line and data notes.
+- Account for the destination's own frame: leave margin for the chrome a slide or page template puts around the image, and drop the chart's title if the destination already supplies one.
 - Leave the annotation zones empty when laying out the plot; annotations placed last land on whatever is already there.
 
 ## Fit the text
 - Budget the title block for a full-length takeaway at full size; wrap to a second line rather than shrinking the type.
 - Wrap, never shrink below the legibility floor — the type hierarchy has to survive the fit.
 - Measure text extent before placing it; text that overflows the canvas is invisible, not merely small.
+- Escape or disable the renderer's inline markup before drawing any text: currency, math, and underscore characters are live syntax in many text engines, which will either crash the render or silently swallow the glyph. Labels carrying money hit this constantly.
+- Choose where a wrapped line breaks. Never split a number from its unit or currency symbol — that changes what the chart says — and never break inside a hyphenated term.
 - Judge the smallest text at final display size, not at authoring size.
 - Keep every glyph inside the canvas on all four edges, including descenders and rotated labels.
 - Flow the title, subtitle, plot, and footer from measured heights, not fixed offsets; the moment a title wraps to an extra line, fixed offsets put it on top of whatever sits below.
@@ -41,6 +44,8 @@ labels, annotation. This stage is about the artifact surviving contact with a re
 - Check annotations against gridlines, axis labels, and data marks, not just against each other.
 - When labels crowd past resolving, label fewer things — the peak, the trough, the current value — rather than shrinking them all.
 - Verify each label still points unambiguously at its own mark after any nudge.
+- Require a real gutter, not bare non-overlap: text separated by a hair still reads as crowded.
+- When checking collisions programmatically, ignore anything not actually drawn — hidden, zero-extent, or off-canvas elements — or the check drowns in false positives and you stop trusting it.
 
 ## Verify, then export
 - Look at the rendered image, not the code or markup that produced it. Clipping, overlap, and collisions are invisible in source and obvious on screen.
