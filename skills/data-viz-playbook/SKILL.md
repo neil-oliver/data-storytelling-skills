@@ -25,6 +25,15 @@ loaded on demand:** open only the file the current decision needs; each file's
 (one file per chart family), `delivery/` (one file per presentation topic), and a few
 cross-cutting root files.
 
+When another visualization or design skill is loaded alongside this one, they divide
+cleanly rather than compete. That one owns house style: palette, components, and the look
+of the finished thing — use it for those. This one owns the decisions, and they come from
+this corpus: which analytical task the question actually is, which form serves it, whether
+the data supports that form, whether a takeaway survives the built chart, and what a
+rendered image has to clear. Another skill's nearest equivalent is written for a different
+job and will not route you through the so-what gate, so reaching for it there skips the
+part that decides whether the chart is worth shipping.
+
 ## Entry points
 
 - **Create** — you have a question, a dataset, or both, and need the right chart
