@@ -47,4 +47,4 @@ When you see the pattern on the left, consider the swap on the right.
 ## When to break convention
 - For scroll-stopping media, a striking custom form can beat a plain bar — keep exact value labels.
 
-Related: [00-selection](chart-types/00-selection.md)
+Related: the task → form table in SKILL.md

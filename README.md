@@ -90,8 +90,8 @@ skills/data-viz-playbook/     the skill itself — everything below sits inside 
   elevation-swaps.md          default chart → sharper reframe, when the obvious form fails
   audience-and-presentation.md
                               tailoring depth, framing, and sequencing to a reader or room
-  chart-types/                one file per chart family; 00-selection.md maps
-                              analytical task → form and routes to the right file
+  chart-types/                one file per chart family; SKILL.md's task → form table
+                              routes directly to each
   delivery/essentials.md      every rule that applies to every chart — principles, titles,
                               subtitles, axes, color, labels, annotations, decluttering,
                               formatting, polish — in one always-read file

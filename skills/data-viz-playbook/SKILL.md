@@ -5,34 +5,28 @@ description: >-
   result has a point worth showing — then building, reviewing, or rendering it. Use it for
   any chart, graph, plot, dashboard, KPI tile, or data-visualization task, including
   "visualize this", "render this", "chart this data", "show me the trend", "what's wrong
-  with this graph", "make this dashboard clearer". It covers what a styling, palette, or
-  component guide does not: mapping the question to an analytical task and chart form,
-  interrogating whether the data can actually support that form, forcing a one-sentence
-  takeaway before anything ships, critiquing an existing chart — usually a screenshot —
-  for integrity, form, and delivery, and holding an image you render yourself to a
-  production bar. Load it in addition to any visual-design or palette skill, not instead
-  of one: those decide how a chart looks, this decides what it says, whether it is honest,
-  and whether it earns its place. Source- and medium-agnostic: any data source, any output
-  medium.
+  with this graph", "make this dashboard clearer". It covers what a styling or palette
+  guide does not: choosing the chart form from the question, testing whether the data
+  supports it, forcing a one-sentence takeaway before anything ships, critiquing an
+  existing chart — usually a screenshot — and holding an image you render yourself to a
+  production bar. Load it in addition to any visual-design skill, not instead of one:
+  those decide how a chart looks, this decides what it says and whether it earns its
+  place. Source- and medium-agnostic: any data source, any output medium.
 ---
 
 # Data Visualization Playbook
 
 One system for getting from a question — or from an existing chart — to a visualization
 with a defensible point. **This file is the procedure. Everything else is a rule corpus
-loaded on demand:** open only the file the current decision needs; each file's
-`scope`/`use_when` frontmatter says when it applies. The corpus lives in `chart-types/`
-(one file per chart family), `delivery/` (one file per presentation topic), and a few
-cross-cutting root files.
+loaded on demand:** open only the file the current decision needs — this file says which
+that is. The corpus lives in `chart-types/` (one file per chart family), `delivery/`
+(essentials plus four conditional topics), and a few cross-cutting root files.
 
-When another visualization or design skill is loaded alongside this one, they divide
-cleanly rather than compete. That one owns house style: palette, components, and the look
-of the finished thing — use it for those. This one owns the decisions, and they come from
-this corpus: which analytical task the question actually is, which form serves it, whether
-the data supports that form, whether a takeaway survives the built chart, and what a
-rendered image has to clear. Another skill's nearest equivalent is written for a different
-job and will not route you through the so-what gate, so reaching for it there skips the
-part that decides whether the chart is worth shipping.
+When another visualization or design skill is loaded alongside this one, split the work:
+it owns house style — palette, components, the look of the finished thing. This one owns
+the decisions, and they come from this corpus — task, form, whether the data supports it,
+whether a takeaway survives, what a rendered image must clear. Another skill's nearest
+equivalent will not route you through the so-what gate.
 
 ## Entry points
 
@@ -49,18 +43,21 @@ one-sentence takeaway it visibly supports.
 
 ## What every create run reads
 
-Six files, in this order. They are the method; skipping one is how a chart ships with the
-wrong form, a claim the data doesn't support, or no point at all.
+Five files plus one category file, every time. They are the method; skipping one is how a
+chart ships with the wrong form, a claim the data doesn't support, or no point at all.
+Copy this into your reply and tick each off as you go:
 
-1. [chart-types/00-selection.md](chart-types/00-selection.md) — analytical task → form
-2. the category file for the form (or forms) still in play
-3. [data.md](data.md) — what to plot, and shaping it
-4. [so-what.md](so-what.md) — the gate
-5. [delivery/essentials.md](delivery/essentials.md) — every rule that applies to every chart
-6. [anti-patterns.md](anti-patterns.md) — the pre-ship sweep
+```
+- [ ] chart-types/<form>.md   the category file(s) for the form in play
+- [ ] data.md                 what to plot, and shaping it
+- [ ] so-what.md              the gate — no takeaway, no chart
+- [ ] delivery/essentials.md  every rule that applies to every chart
+- [ ] anti-patterns.md        the pre-ship sweep
+- [ ] render.md               whenever you produce the image yourself
+```
 
-[render.md](render.md) joins them whenever you produce the image yourself. Everything
-else in the corpus is genuinely conditional — load it only when its `use_when` matches.
+Everything else in the corpus is genuinely conditional — load it only when its `use_when`
+matches.
 
 A review run reads the same corpus through the three lenses below, not this sequence.
 
@@ -115,15 +112,38 @@ inside the request, split them; one chart does one job. When a specific audience
 or venue is named, also load [audience-and-presentation.md](audience-and-presentation.md).
 
 **2. Envision the target.** Before shaping any data, sketch the ideal outcome as a
-hypothesis: the analytical task (comparison, change over time, part-to-whole,
-distribution, correlation, ranking, flow, single value, geographic, matrix), the form
-that would make the answer unmissable, and the takeaway you expect to write. Load
-[chart-types/00-selection.md](chart-types/00-selection.md) to map task → form, then the
-category file for each form still in play. If two or three forms are genuinely plausible,
-carry them all forward and let the real data decide (see [Parallel work](#parallel-work)).
-A category file may point you at a form you hadn't considered — follow that
-cross-reference and load it. A better form surfacing mid-loop is the corpus working, not
-scope creep.
+hypothesis: the analytical task, the form that would make the answer unmissable, and the
+takeaway you expect to write. Map task → form here, then read the category file for each
+form still in play. If two or three are genuinely plausible, carry them all forward and
+let the real data decide (see [Parallel work](#parallel-work)). A category file may point
+you at a form you hadn't considered — follow that cross-reference and load it.
+
+- **Comparison across categories** → bars, columns, dot/lollipop plots. → [comparison](chart-types/comparison.md)
+- **Change over time** → line or area; two points → slope; ranking over time → bump. → [change-over-time](chart-types/change-over-time.md)
+- **Part-to-whole** → pie (≤5), waffle, stacked / 100% stacked bar, treemap, ternary (3 parts). → [part-to-whole](chart-types/part-to-whole.md)
+- **Distribution / spread** → histogram, box, strip/beeswarm, ECDF, KDE, violin, ridgeline. → [distribution](chart-types/distribution.md)
+- **Correlation** → scatter; overplotting → hexbin/density; add regions → quadrant. → [correlation](chart-types/correlation.md)
+- **Ranking / deviation** → sorted bars; signed gap → diverging bars; survey → Likert. → [ranking-and-deviation](chart-types/ranking-and-deviation.md)
+- **Flow / process / drop-off** → funnel, sankey, waterfall. → [flow-and-process](chart-types/flow-and-process.md)
+- **Value across a matrix** → heatmap. → [matrix-and-heatmap](chart-types/matrix-and-heatmap.md)
+- **Geographic pattern** → choropleth (rates only), flow map, isochrone. → [geospatial](chart-types/geospatial.md)
+- **Single headline value** → big number, bullet, gauge, progress. → [single-value](chart-types/single-value.md)
+- **Uncertainty / forecast** → confidence band or fan chart. → [change-over-time](chart-types/change-over-time.md)
+- **Many series or cohorts at once** → small multiples. → [small-multiples](chart-types/small-multiples.md)
+- **Exact values for lookup** → table. → [tables](chart-types/tables.md)
+- **Cyclical or niche** → radial, polar, hemicycle (sparingly). → [specialized](chart-types/specialized.md)
+
+- Match the form to the message so the insight is unmissable.
+- Choose the form by the question: difference, total, ranking, spread, flow, or story.
+- Decide whether the reader wants exact values or overall direction; design for one, not both.
+- Know each form's limitations before choosing it, not just its strengths.
+- For many small differences favor exact labels; for one dominant pattern favor uniform encoding.
+- Never make one chart serve both discovery and direction; the hybrid goes unused.
+- Treat the bar chart as the reliable default; reach for novel forms only when they earn it.
+- Animate over time or space only when the shifting distribution is the insight.
+- For precise two-moment comparison prefer small multiples, static maps, or tables over animation.
+- Pick the form that supports your point, then verify it stays honest.
+- When the default form is cluttered or off-message, reframe it — see [elevation-swaps](elevation-swaps.md).
 
 **3. Interrogate the data.** Load [data.md](data.md). Test the hypothesis against
 reality: run the actual queries, pulls, and transforms, and check whether the data can
@@ -193,7 +213,7 @@ to whoever owns the data as questions rather than findings, and say which of you
 would change if the answer went the other way.
 
 **1. Reconstruct intent.** Identify the analytical task the chart is attempting (use the
-taxonomy in [chart-types/00-selection.md](chart-types/00-selection.md)) and its claimed
+taxonomy in the task → form table in SKILL.md) and its claimed
 takeaway, held to the bar in [so-what.md](so-what.md). If the takeaway can't be stated
 from the chart alone, record that as finding #1 — it is usually the root cause of
 everything else — and if you also can't tell what the chart was *trying* to say, ask its
@@ -204,7 +224,7 @@ parallel (see [Parallel work](#parallel-work)):
 - **Integrity** — [anti-patterns.md](anti-patterns.md), plus [data.md](data.md) when the
   underlying data or queries are visible: axes, truncation, cherry-picking, misleading
   statistics, bias.
-- **Form** — [chart-types/00-selection.md](chart-types/00-selection.md), the category
+- **Form** — the task → form table in SKILL.md, the category
   file for the form on screen (judge the form it *should* be with 00-selection.md, not by
   loading extra category files), and [elevation-swaps.md](elevation-swaps.md): is this
   the right chart at all, and is there a sharper reframe?
@@ -225,36 +245,21 @@ the target.
 
 ## The render stage
 
-Run this stage whenever you are the one producing the image — rendering a chart to a
-file, drawing it inline, exporting a picture, or otherwise handing back something to look
-at rather than something to build from. Being asked to "visualize" or "show" a result
-puts you here.
+Run this whenever you are the one producing the image — rendering a chart to a file,
+drawing it inline, exporting a picture, or handing back something to look at rather than
+something to build from. Being asked to "visualize" or "show" a result puts you here.
 
-It is skipped in exactly one case: the deliverable stops at the design — a form, a
-takeaway, and the delivery decisions — which the recipient will build in their own tool,
-on their own data, in their own house style.
+Skip it in exactly one case: the deliverable stops at the design, and the recipient builds
+it in their own tool, on their own data, in their own house style.
 
-That is the whole test, and it is worth being precise about what "optional" means here.
-It means some tasks legitimately end at the design. It does not mean a rendered chart may
-skip these targets, and it is not licence to fall back on however you would otherwise
-draw a chart. Knowing how to produce an image is not the same as holding one to a
-standard: skipping this stage is how charts ship with clipped titles, colliding labels,
-illegible type, and numbers that contradict the data — each of them invisible in the code
-that produced them and obvious in the image.
+"Optional" means some tasks legitimately end at the design. It does not mean a rendered
+chart may skip these targets, and it is not licence to fall back on however you would
+otherwise draw a chart — that is how charts ship with clipped titles, colliding labels,
+and numbers that contradict the data, each invisible in the code and obvious in the image.
 
-Load [render.md](render.md). It fixes the production targets — canvas and aspect,
-reserved regions, text fitting, label collisions, export, and the visual check — without
-naming a library, a language, or a format beyond vector versus raster. Use whatever tool
-is already to hand and hold it to those targets; the corpus stays deliberately neutral so
-the same design can be rendered anywhere, by anyone.
-
-Two things make this stage worth running as its own pass rather than folding it into
-step 4. First, its exit condition is visual, not logical: you render, look at the image,
-fix what only the image reveals, and render again — clipping, collisions, and overflow
-are invisible in source. Second, it carries the last integrity check in the whole method:
-every number printed on the chart gets read back against the source data, because a
-formatter that rounds or scales wrongly will print a confidently false value onto an
-otherwise honest chart.
+Load [render.md](render.md) and hold whatever tool you have to its targets. Run it as its
+own pass: its exit condition is visual, not logical, and it carries the method's last
+integrity check — every number on the chart read back against the source data.
 
 ## Parallel work
 

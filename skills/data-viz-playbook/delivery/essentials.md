@@ -11,6 +11,13 @@ it straight through once the takeaway is settled, then design around that senten
 Topic-specific rules that apply only sometimes live in their own files, listed at the
 bottom.
 
+## Contents
+[Principles](#principles) · [Titles](#titles) · [Subtitles](#subtitles) ·
+[Axes and scales](#axes-and-scales) · [Color and emphasis](#color-and-emphasis) ·
+[Labels and legends](#labels-and-legends) · [Annotations](#annotations) ·
+[Decluttering](#decluttering) · [Formatting and ordering](#formatting-and-ordering) ·
+[Polish](#polish) · [Load these only when they apply](#load-these-only-when-they-apply)
+
 ## Principles
 
 - Design a clear visual hierarchy so the main message reads in seconds.
