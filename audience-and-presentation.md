@@ -16,7 +16,7 @@ use_when: Choosing depth, framing, and sequencing for a specific audience or roo
 - Choose box plots for lay audiences; reserve KDE and violin for stat-literate ones.
 - Anchor unfamiliar magnitudes against a universal comparison the audience already knows.
 - Match chart form to venue: conventional for boardrooms, distinctive for scroll-stopping media.
-- Let users filter by segment or region when aggregates hide local variation.
+- Provide filters for segment or region when aggregates hide local variation.
 
 ## Present it
 - Lead with purpose so meetings end in clarity and action.

@@ -39,7 +39,7 @@ use_when: Reviewing a chart before shipping; catching distortion, clutter, and b
 - Avoid pie charts when slice magnitudes must be compared; prefer a sorted bar.
 - Avoid radar/spider charts; connecting lines and areas mislead across categories.
 - Avoid word clouds; non-linear font scaling hides patterns.
-- Avoid rank charts when the value gaps, not the order, are the story.
+- Avoid rank charts when the gaps between values, not the order, are the story.
 - Avoid waterfalls with too many steps; they clutter.
 - Avoid LOESS on small, thin, or sharply-shifting data; it overfits.
 - Avoid rainbow-coloring categories that carry no meaning.

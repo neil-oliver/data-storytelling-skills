@@ -11,7 +11,7 @@ use_when: Deciding how to name series, points, and values on the chart.
 - Print percentage values inside diverging/Likert bars; people judge stacked lengths poorly.
 - Print the underlying value inside each heatmap cell for exact readouts.
 - Label only critical points: peak, trough, current, and change onset.
-- Label the measure of central tendency explicitly rather than saying only "average".
+- Label the measure of central tendency explicitly; never just say "average".
 - Label each distribution group with its defining threshold and sample size n.
 - Label deltas clearly, e.g. "+12% vs last week" or "95% of target met".
 - Give quadrant regions plain-language names describing what points there represent.

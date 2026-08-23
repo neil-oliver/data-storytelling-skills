@@ -88,9 +88,11 @@ hypothesis: the analytical task (comparison, change over time, part-to-whole,
 distribution, correlation, ranking, flow, single value, geographic, matrix), the form
 that would make the answer unmissable, and the takeaway you expect to write. Load
 [chart-types/00-selection.md](chart-types/00-selection.md) to map task → form, then the
-category file for each form still in play — usually one. If two or three forms are
-genuinely plausible, carry them all forward and let the real data decide (see
-[Parallel work](#parallel-work)).
+category file for each form still in play. If two or three forms are genuinely plausible,
+carry them all forward and let the real data decide (see [Parallel work](#parallel-work)).
+A category file may point you at a form you hadn't considered — follow that
+cross-reference and load it. A better form surfacing mid-loop is the corpus working, not
+scope creep.
 
 **3. Interrogate the data.** Load [data.md](data.md). Test the hypothesis against
 reality: run the actual queries, pulls, and transforms, and check whether the data can
@@ -102,8 +104,8 @@ Explore freely when you don't yet know what the data holds, but return with an a
   force data into a form it doesn't support.
 
 **4. Build it for real.** Produce the actual chart with the actual data, in whatever
-medium the output calls for. Not a mock-up:
-real numbers, rendered where you can see the result. You cannot judge a chart you haven't
+medium the output calls for. Not a mock-up: real numbers, rendered where you can see the
+result. You cannot judge a chart you haven't
 built, and the next step depends on looking at it. What you need here is a chart good
 enough to judge the story by, not a finished artifact — if the layout is rough but the
 shape of the story is legible, that is enough to reach the gate. Production polish belongs

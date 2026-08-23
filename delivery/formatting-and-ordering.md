@@ -7,6 +7,7 @@ use_when: Setting number precision, units, styling, or sort order.
 
 ## Number & date formatting
 - Round numbers to the precision the decision needs, not raw digits.
+- Never let rounding print a figure that contradicts the data: a real change that rounds to zero, or a sign that disappears, needs another decimal or a different unit. "-0%" against a real decline is a false statement, not a tidy one.
 - Trim decimals and abbreviate large numbers (K, M) to declutter dashboards.
 - Keep precise decimals for scientific, financial, or engineering data where rounding erodes credibility.
 - Use thousands separators and consistent units.

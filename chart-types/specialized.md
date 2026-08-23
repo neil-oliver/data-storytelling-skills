@@ -21,6 +21,6 @@ use_when: Considering radial, polar, hemicycle, or other unconventional forms.
 ## Attention-seeking forms
 - For scroll-stopping media, a distinctive custom form can beat a plain bar.
 - Keep exact value labels on stylized or illustrated marks so accuracy survives the metaphor.
-- Match chart form to venue: conventional for boardrooms, distinctive for media.
+- Match chart form to venue: conventional for boardrooms, distinctive for scroll-stopping media.
 
 Related: [comparison](comparison.md) · [anti-patterns](../anti-patterns.md) · [audience-and-presentation](../audience-and-presentation.md)
