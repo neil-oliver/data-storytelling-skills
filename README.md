@@ -6,15 +6,18 @@ visualizations. Written for an LLM agent — every line is a rule or a procedure
 and source- and medium-agnostic: it applies whether the output is plotting code, inline
 SVG, a BI dashboard, or an exported image.
 
-It covers two jobs with one shared rule corpus:
+It covers three jobs with one shared rule corpus:
 
 - **Create** — recommend and build the right chart from a question and/or a dataset, via an
   iterative loop: envision the ideal outcome, test it against the real data, build the
   chart for real, force the "so what", then polish delivery.
 - **Review** — critique an existing chart (image, code, or spec) through three independent
   lenses — integrity, form, and delivery — and return prioritized, concrete fixes.
+- **Render** — optional, on top of either: turn the finished design into an image file to a
+  fixed quality bar. The corpus never names a library or a format, so the same design can be
+  rendered by any tool, or handed to a person to build.
 
-The procedure for both lives in [SKILL.md](SKILL.md). Everything else is a rule corpus the
+The procedure for all three lives in [SKILL.md](SKILL.md). Everything else is a rule corpus the
 agent loads one file at a time, as each decision comes up.
 
 Throughout, the agent is meant to work as a companion: it asks a clarifying question only
@@ -82,10 +85,12 @@ Markdown links resolve like wikilinks.
 
 ```
 SKILL.md                    the procedure: entry points, the create loop, the review pass,
-                            and where parallel work pays off
+                            the optional render stage, and where parallel work pays off
 data.md                     what to plot and how to shape it (slices, baselines,
                             statistics, normalization, binning, missing data)
 so-what.md                  the gate: no one-sentence takeaway, no chart
+render.md                   optional: canvas, text fitting, label collisions, export, and
+                            the visual check for producing an image file
 anti-patterns.md            the ship checklist: honesty, distortion, and bias failures
 elevation-swaps.md          default chart → sharper reframe, when the obvious form fails
 audience-and-presentation.md  tailoring depth, framing, and sequencing to a reader or room

@@ -1,5 +1,5 @@
 ---
-scope: Spacing, alignment, resolution, aspect ratio, and presentation-ready styling (type lives in typography.md).
+scope: Spacing, alignment, and presentation-ready styling (type lives in typography.md; canvas and export live in render.md).
 use_when: Making a chart look polished and beautiful without sacrificing clarity.
 ---
 
@@ -10,8 +10,7 @@ use_when: Making a chart look polished and beautiful without sacrificing clarity
 - Align chart elements cleanly on a shared grid; avoid misaligned layouts.
 - Keep spacing consistent — even bar gaps, uniform margins, balanced whitespace.
 - Build a clear type hierarchy with legible fonts — see [typography](typography.md).
-- Set aspect ratio and font sizes for the display context (slide, doc, mobile).
-- Render charts crisp and high-resolution; never ship blurry or pixelated visuals.
+- Match aspect ratio and text sizes to the display context (slide, doc, mobile); when you are producing the image file yourself, [render](../render.md) holds the canvas and resolution targets.
 - Prefer soft, intentional palettes over harsh, outdated defaults.
 - Set annotations in a distinct style so they read as commentary, not data.
 - Keep styling — colors, fonts, layout — stable across contexts and when embedded.

@@ -28,9 +28,11 @@ cross-cutting root files.
   recommended and built → run [the create loop](#the-create-loop).
 - **Review** — a chart already exists (image, code, spec, or dashboard) and needs critique
   or improvement → run [the review pass](#the-review-pass).
+- **Render** — optional, and additive to either: the deliverable is a finished image file
+  rather than a design someone else will build → run [the render stage](#the-render-stage).
 
-Both share the same corpus and the same bar: a chart ships only with a one-sentence
-takeaway it visibly supports.
+Create and Review share the same corpus and the same bar: a chart ships only with a
+one-sentence takeaway it visibly supports.
 
 ## Working with the user
 
@@ -100,8 +102,8 @@ Explore freely when you don't yet know what the data holds, but return with an a
 - It can't → change the target (back to 2) or reframe the question (back to 1). Never
   force data into a form it doesn't support.
 
-**4. Build it for real.** Produce the actual chart with the actual data in the output
-medium — run the plotting code, render the SVG, fill the dashboard spec. Not a mock-up:
+**4. Build it for real.** Produce the actual chart with the actual data, in whatever
+medium the output calls for. Not a mock-up:
 real numbers, rendered where you can see the result. You cannot judge a chart you haven't
 built, and the next step depends on looking at it. Budget a few render-and-look passes
 for layout alone — overflowing titles, colliding labels, annotations landing on the axis
@@ -139,7 +141,8 @@ here goes back into the loop (3 or 5) — never into a footnote.
 
 **Output.** Deliver three things: the finished chart (or its code/spec), the one-sentence
 takeaway, and the data notes a reader needs to trust it — source, time window,
-exclusions, caveats.
+exclusions, caveats. If what's wanted is an image file rather than something the recipient
+will build themselves, continue to [the render stage](#the-render-stage).
 
 ## The review pass
 
@@ -176,6 +179,28 @@ outranks polish. A critique is feedback on someone's work: name what the chart g
 before what it gets wrong, and aim every finding at the chart, not its author. To apply
 the fixes yourself, enter the create loop at step 3 or 4 with the reconstructed intent as
 the target.
+
+## The render stage
+
+Optional, and additive to either entry point. Everything above produces a *design* — the
+form, the takeaway, and the delivery decisions around it — which is often the whole
+deliverable: the recipient builds it in their own tool, on their own data, in their own
+house style. Run this stage only when what's wanted is a finished image someone will drop
+straight into a slide, a document, or a page.
+
+Load [render.md](render.md). It fixes the production targets — canvas and aspect,
+reserved regions, text fitting, label collisions, export, and the visual check — without
+naming a library, a language, or a format beyond vector versus raster. Use whatever tool
+is already to hand and hold it to those targets; the corpus stays deliberately neutral so
+the same design can be rendered anywhere, by anyone.
+
+Two things make this stage worth running as its own pass rather than folding it into
+step 4. First, its exit condition is visual, not logical: you render, look at the image,
+fix what only the image reveals, and render again — clipping, collisions, and overflow
+are invisible in source. Second, it carries the last integrity check in the whole method:
+every number printed on the chart gets read back against the source data, because a
+formatter that rounds or scales wrongly will print a confidently false value onto an
+otherwise honest chart.
 
 ## Parallel work
 
