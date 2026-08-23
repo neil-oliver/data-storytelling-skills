@@ -1,0 +1,15 @@
+{
+  "name": "data-storytelling-skills",
+  "description": "Data storytelling skills for coding agents — the data-viz-playbook plugin.",
+  "owner": {
+    "name": "neil-oliver",
+    "url": "https://github.com/neil-oliver"
+  },
+  "plugins": [
+    {
+      "name": "data-viz-playbook",
+      "source": "./",
+      "description": "A method and ~600-rule corpus for recommending, building, and reviewing data visualizations. Source- and medium-agnostic."
+    }
+  ]
+}
