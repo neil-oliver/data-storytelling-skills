@@ -1,18 +1,19 @@
 ---
 name: data-viz-playbook
 description: >-
-  A complete method for producing and reviewing data visualizations, backed by ~600
-  prescriptive rules loaded on demand. Use it whenever the task involves a chart, graph,
-  plot, dashboard, KPI tile, or any data visualization: recommending a chart type ("how
-  should I show this?"), building a chart from a question or dataset, preparing and shaping
-  data to plot, writing chart titles and annotations, or reviewing and improving an existing
-  chart — usually a screenshot or image, sometimes the plotting code or dashboard spec
-  behind it. It also governs producing the finished picture yourself — rendering,
-  exporting, or drawing the image rather than handing over a design for someone else to
-  build — and applies to that even when you already know how to draw a chart. Use it even
-  when the word "chart" is absent — "visualize this", "render this", "show me the trend",
-  "what's wrong with this graph", "make this dashboard clearer". Source- and
-  medium-agnostic: it applies to any data source and any output medium.
+  The method for deciding what to plot, whether the data supports it, and whether the
+  result has a point worth showing — then building, reviewing, or rendering it. Use it for
+  any chart, graph, plot, dashboard, KPI tile, or data-visualization task, including
+  "visualize this", "render this", "chart this data", "show me the trend", "what's wrong
+  with this graph", "make this dashboard clearer". It covers what a styling, palette, or
+  component guide does not: mapping the question to an analytical task and chart form,
+  interrogating whether the data can actually support that form, forcing a one-sentence
+  takeaway before anything ships, critiquing an existing chart — usually a screenshot —
+  for integrity, form, and delivery, and holding an image you render yourself to a
+  production bar. Load it in addition to any visual-design or palette skill, not instead
+  of one: those decide how a chart looks, this decides what it says, whether it is honest,
+  and whether it earns its place. Source- and medium-agnostic: any data source, any output
+  medium.
 ---
 
 # Data Visualization Playbook
