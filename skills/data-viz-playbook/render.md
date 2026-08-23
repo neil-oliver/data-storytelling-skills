@@ -1,12 +1,13 @@
 ---
 scope: Produce a finished image file to a fixed quality bar — canvas, regions, text fitting, label collisions, vector specifics, export, and the visual check.
-use_when: The deliverable is an image someone will drop into a slide, doc, or page — not a recommendation, a spec, or live code.
+use_when: You are producing the image yourself — rendering, exporting, or drawing it — rather than handing over a design for someone else to build.
 ---
 
 # Render
 
-Optional, and deliberately tool-neutral. Nothing here names a library, a language, or a
-file format beyond the two things you can hand someone — a vector file or a raster one.
+These targets apply to any image you produce yourself, however you produce it. They are
+deliberately tool-neutral: nothing here names a library, a language, or a file format
+beyond the two things you can hand someone — a vector file or a raster one.
 The same targets hold whether the image comes out of a plotting library, a browser, a
 notebook, hand-written vector markup, or a design tool. Use whatever is already available
 and hold it to these.

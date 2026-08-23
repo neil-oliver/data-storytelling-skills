@@ -13,8 +13,9 @@ It covers three jobs with one shared rule corpus:
   chart for real, force the "so what", then polish delivery.
 - **Review** — critique an existing chart (image, code, or spec) through three independent
   lenses — integrity, form, and delivery — and return prioritized, concrete fixes.
-- **Render** — optional, on top of either: turn the finished design into an image file to a
-  fixed quality bar. The corpus never names a library or a format, so the same design can be
+- **Render** — on top of either, whenever the agent produces the picture itself rather than
+  handing over a design: hold the image to a fixed quality bar — canvas, text fitting, label
+  collisions, export, and a look-at-the-result check. Tool-neutral, so the same design can be
   rendered by any tool, or handed to a person to build.
 
 The procedure for all three lives in [SKILL.md](skills/data-viz-playbook/SKILL.md).

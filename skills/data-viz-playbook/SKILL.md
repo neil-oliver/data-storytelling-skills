@@ -7,8 +7,11 @@ description: >-
   should I show this?"), building a chart from a question or dataset, preparing and shaping
   data to plot, writing chart titles and annotations, or reviewing and improving an existing
   chart — usually a screenshot or image, sometimes the plotting code or dashboard spec
-  behind it. Use it even when the word "chart" is absent — "visualize this", "show the
-  trend", "what's wrong with this graph", "make this dashboard clearer". Source- and
+  behind it. It also governs producing the finished picture yourself — rendering,
+  exporting, or drawing the image rather than handing over a design for someone else to
+  build — and applies to that even when you already know how to draw a chart. Use it even
+  when the word "chart" is absent — "visualize this", "render this", "show me the trend",
+  "what's wrong with this graph", "make this dashboard clearer". Source- and
   medium-agnostic: it applies to any data source and any output medium.
 ---
 
@@ -27,8 +30,9 @@ cross-cutting root files.
   recommended and built → run [the create loop](#the-create-loop).
 - **Review** — a chart already exists — usually as an image — and needs critique or
   improvement → run [the review pass](#the-review-pass).
-- **Render** — optional, and additive to either: the deliverable is a finished image file
-  rather than a design someone else will build → run [the render stage](#the-render-stage).
+- **Render** — you are producing the picture yourself rather than handing over a design
+  for someone else to build → run [the render stage](#the-render-stage), on top of either
+  of the above.
 
 Create and Review share the same corpus and the same bar: a chart ships only with a
 one-sentence takeaway it visibly supports.
@@ -146,9 +150,9 @@ can claim.
 Before shipping, sweep [anti-patterns.md](anti-patterns.md). An integrity failure found
 here goes back into the loop (3 or 5) — never into a footnote.
 
-**Output.** If what's wanted is an image file rather than something the recipient will
-build themselves, continue to [the render stage](#the-render-stage) before handing
-anything over. Either way, deliver three things: the finished chart (or its code/spec),
+**Output.** If you are producing the image yourself rather than handing over something
+the recipient will build, continue to [the render stage](#the-render-stage) before handing
+anything over — that applies to a quick inline picture just as much as to a file. Either way, deliver three things: the finished chart (or its code/spec),
 the one-sentence takeaway, and the data notes a reader needs to trust it — source, time
 window, exclusions, caveats.
 
@@ -198,11 +202,22 @@ the target.
 
 ## The render stage
 
-Optional, and additive to either entry point. Everything above produces a *design* — the
-form, the takeaway, and the delivery decisions around it — which is often the whole
-deliverable: the recipient builds it in their own tool, on their own data, in their own
-house style. Run this stage only when what's wanted is a finished image someone will drop
-straight into a slide, a document, or a page.
+Run this stage whenever you are the one producing the image — rendering a chart to a
+file, drawing it inline, exporting a picture, or otherwise handing back something to look
+at rather than something to build from. Being asked to "visualize" or "show" a result
+puts you here.
+
+It is skipped in exactly one case: the deliverable stops at the design — a form, a
+takeaway, and the delivery decisions — which the recipient will build in their own tool,
+on their own data, in their own house style.
+
+That is the whole test, and it is worth being precise about what "optional" means here.
+It means some tasks legitimately end at the design. It does not mean a rendered chart may
+skip these targets, and it is not licence to fall back on however you would otherwise
+draw a chart. Knowing how to produce an image is not the same as holding one to a
+standard: skipping this stage is how charts ship with clipped titles, colliding labels,
+illegible type, and numbers that contradict the data — each of them invisible in the code
+that produced them and obvious in the image.
 
 Load [render.md](render.md). It fixes the production targets — canvas and aspect,
 reserved regions, text fitting, label collisions, export, and the visual check — without
