@@ -25,7 +25,7 @@ use_when: Deciding whether a chart has a point worth showing, and how to state i
 - Test whether a dip is seasonal, noise, anomaly, or market-wide before reacting.
 - Rule out systematic patterns before attributing a trend change to your action.
 - Compare multiple time windows before concluding a trend.
-- Surface external context to separate your moves from market-wide moves.
+- Surface external context to separate your moves from market-wide moves — [data.md](data.md) has where to look for it, in what order, and when to ask before reaching outside.
 - Present both supporting and contradicting evidence to avoid a biased conclusion.
 - Before emphasizing a difference, question whether it actually matters.
 - Treat identical numbers as supporting several valid stories; choose one and defend it.

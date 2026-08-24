@@ -76,7 +76,9 @@ cheap re-cut — size, palette, rounding — and ask when it means a rebuild, be
 metric, the question, or the form was wrong. Ask at the natural moment — usually while
 framing, or when a review can't reconstruct the chart's intent — batch the questions into
 one round, and lead each with your recommended answer. Never ask what looking at the data
-would tell you, and never ask permission for choices the corpus already settles. When no
+would tell you, and never ask permission for choices the corpus already settles. One thing
+always needs agreement regardless of that bar: going outside the data you were given to
+fetch or research external sources. Say what you would look for and why, and wait. When no
 one is there to answer — a scheduled run, a batch job — never stall: take the best
 default and hand it over with the assumption stated plainly enough to be corrected.
 
@@ -148,6 +150,10 @@ you at a form you hadn't considered — follow that cross-reference and load it.
 **3. Interrogate the data.** Load [data.md](data.md). Test the hypothesis against
 reality: run the actual queries, pulls, and transforms, and check whether the data can
 take the shape the target needs — variables, grain, time window, baseline, denominators.
+Settle the comparison too: a result means nothing until you know what it should be
+measured against. Look inside the data first, then ask what else the user holds, and only
+then consider anything external — [data.md](data.md) has the order and the rule for when
+a wider cause is worth suspecting.
 Explore freely when you don't yet know what the data holds, but return with an aim.
 - The data supports the target → shape it (slice, window, normalize, bin, handle gaps)
   and continue.
